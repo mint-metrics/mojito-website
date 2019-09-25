@@ -60,13 +60,12 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/undraw_experience_design_eq3j.svg`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
             <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl('doc1.html')}>Get Started</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -96,8 +95,7 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>Key features</h2>
       </div>
     );
 
@@ -136,10 +134,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
+              'Avoid test flicker with custom triggers that activate your experiment right when you need them.',
             image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'Expressive JavaScript triggers',
           },
         ]}
       </Block>
@@ -149,16 +147,28 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Skip the WYSIWYG & let your developers use the tools they\'re familiar with.',
+            image: `${baseUrl}img/undraw_version_control_9bpv.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Build, code-review & QA experiments using git',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'An order of magnitude smaller than paid SaaS solutions\' libraries - You\'ll never know it was there',
+            image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Less than 5kb for the library',
+          },
+          {
+            content: 'Use gradual ramp-up and error tracking to ensure your experiments don\'t break mission-critical applications',
+            image: `${baseUrl}img/undraw_security_o890.svg`,
+            imageAlign: 'top',
+            title: 'Launch confidently with error tracking & handling',
+          },
+          {
+            content: 'Launch experiments using the CLI or Bitbucket pipelines into secure environments that you control and manage.',
+            image: `${baseUrl}img/undraw_uploading_go67.svg`,
+            imageAlign: 'top',
+            title: 'Continuous integration into your own environments',
           },
         ]}
       </Block>
