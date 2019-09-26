@@ -1,5 +1,5 @@
 ---
-id: base-intro
+id: home
 title: Mojito framework overview
 ---
 

@@ -65,11 +65,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'base-intro', label: 'Docs'},
-    //{doc: 'base-intro', label: 'Get started'},
+    {doc: 'home', label: 'Docs'},
+    {blog: true, label: 'News'},
     {href: 'https://mintmetrics.io/contact/', label: 'Help'},
     {href: 'https://www.github.com/mint-metrics/mojito', label: 'Github'},
-    //{blog: true, label: 'Blog'},
+    {search: true},
   ],
 
   // If you have users set above, you add it here:
@@ -113,6 +113,12 @@ const siteConfig = {
     'https://buttons.github.io/buttons.js', 
     '//d1xafqim8ep2fx.cloudfront.net/js/mintmetrics.js'
   ],
+
+  algolia: {
+    apiKey: 'bd8462d0cdd55b4d467567530818ee84',
+    indexName: 'mojito-docs',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

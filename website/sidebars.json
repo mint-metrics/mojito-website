@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Introduction": ["base-intro"],
+    "Introduction": ["home"],
     "1. JS Delivery": [
       "js-delivery-intro",
       "js-delivery-setup", 
