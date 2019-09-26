@@ -1,6 +1,7 @@
 ---
 id: snowplow-storage-data-models
 title: Mojito Snowplow/Redshift data models
+sidebar_label: Redshift data models
 ---
 
 For measuring causality, we only count conversions taking place **after** a user is bucketed into a test. Tracking events before exposure to a variant only confounds the results.

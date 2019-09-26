@@ -1,6 +1,7 @@
 ---
 id: js-delivery-hosting-bitbucket
 title: 4. Set up Bitbucket Pipelines CI
+sidebar_label: 4. (Optional) Bitbucket Pipelines CI
 ---
 
 If using Bitbucket with Pipelines build minutes, you can build, test and publish Mojito JS from the cloud. Perfect for managing your deployments and tracking what's running in production.

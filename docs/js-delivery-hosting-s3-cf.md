@@ -1,6 +1,7 @@
 ---
 id: js-delivery-hosting-s3-cf
-title: 1. Set up AWS S3 & Cloudfront
+title: 1. Set up AWS S3 & Cloudfront distribution for hosting Mojito
+sidebar_label: 1. AWS S3 & Cloudfront setup
 ---
 
 We set up S3 and Cloudfront first so we can assign users with limited access to publish conatiners.

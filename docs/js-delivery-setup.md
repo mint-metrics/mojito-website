@@ -1,6 +1,7 @@
 ---
 id: js-delivery-setup
-title: Experiment setup
+title: Setting up experiments with Mojito JS Delivery
+sidebar_label: Experiment setup
 ---
 
 There are two approaches to setup experiments in Mojito. The **gulp** builder supports both methods when building the JS container.

@@ -1,6 +1,7 @@
 ---
 id: js-delivery-preview-launch
-title: Previewing & launching experiments
+title: Previewing & launching experiments with Mojito JS Delivery
+sidebar_label: Preview & launch
 ---
 
 ## Building the JS container

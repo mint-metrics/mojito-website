@@ -1,6 +1,7 @@
 ---
 id: snowplow-storage-intro
 title: Mojito Snowplow Storage overview
+sidebar_label: Introduction
 ---
 
 This component allows you to collect experiment events and perform the necessary data modelling for [Mojito R Analytics](r-analytics-intro.md) reports and other tools. 

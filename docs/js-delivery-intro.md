@@ -1,6 +1,7 @@
 ---
 id: js-delivery-intro
-title: Introduction
+title: Introduction to Mojito JS Delivery
+sidebar_label: Introduction
 ---
 
 The ```Mojito JS Delivery``` component is a lightweight (&lt;5kb) JS framework for building, publishing and tracking experiments on the web. Commonly known as A/B split testing, experimentation is a core pillar of Conversion Rate Optimisation.

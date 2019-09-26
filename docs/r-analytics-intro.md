@@ -1,6 +1,7 @@
 ---
 id: r-analytics-intro
 title: Mojito R Analytics Overview
+sidebar_label: Introduction
 ---
 
 This component allows you to create fully-templateable experiment reports for Mojito Snowplow/Redshift, using R Markdown and HTML.

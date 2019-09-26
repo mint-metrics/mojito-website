@@ -1,7 +1,7 @@
 ---
 id: js-delivery-hosting
-title: Hosting your container
-
+title: Hosting your Mojito split testing container
+sidebar_label: Hosting options
 ---
 
 You own the full source to your Mojito container, so you have unlimited options to host it, including: 

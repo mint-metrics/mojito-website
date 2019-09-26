@@ -1,6 +1,7 @@
 ---
 id: js-delivery-hosting-iam
-title: 3. User credentials for publishing
+title: 3. Create publishing user credentials and locked-down IAM policy
+sidebar_label: 3. Setup AWS user & IAM access
 ---
 
 We'll use this account to publish Mojito JS containers from your IDE and/or CI pipeline. It's a good practice to lock down the permissions on these users to the specific files/folders they need.

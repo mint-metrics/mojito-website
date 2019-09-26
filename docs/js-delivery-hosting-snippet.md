@@ -1,6 +1,7 @@
 ---
 id: js-delivery-hosting-snippet
-title: 5. Add the snippet to your site
+title: 5. Install your Mojito JS snippet
+sidebar_label: 5. Snippet installation
 ---
 
 We typically install Mojito JS synchronously in the head of all pages with a script tag:
