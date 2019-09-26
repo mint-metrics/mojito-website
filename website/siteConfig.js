@@ -48,6 +48,7 @@ const siteConfig = {
   title: 'Mojito', // Title for your website.
   tagline: 'Build, launch & report on experiments via Git & CI',
   url: 'https://mojito.mx', // Your website URL
+
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
