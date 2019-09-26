@@ -60,12 +60,12 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_experience_design_eq3j.svg`} />
+        <Logo img_src={`${baseUrl}img/logo.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Get Started</Button>
+            <Button href={docUrl('base-intro')}>View docs</Button>
+            <Button href="https://mintmetrics.io/mojito/introducing-mojito-open-source-self-hosted-experimentation-stack/">Read intro blog post</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -208,10 +208,6 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
           <Showcase />
         </div>
       </div>
