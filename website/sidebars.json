@@ -1,10 +1,31 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Introduction": ["home"],
+    "1. JS Delivery": [
+      "js-delivery-intro",
+      "js-delivery-setup", 
+      "js-delivery-customisation",
+      "js-delivery-preview-launch",
+      {
+        "type": "subcategory",
+        "label": "Hosting",
+        "ids": [
+          "js-delivery-hosting",
+          "js-delivery-hosting-s3-cf",
+          "js-delivery-hosting-build-script",
+          "js-delivery-hosting-iam",
+          "js-delivery-hosting-bitbucket",
+          "js-delivery-hosting-snippet"
+        ]
+      },
+      "js-delivery-utilities"
+    ],
+    "2. Snowplow Storage": [
+      "snowplow-storage-intro",
+      "snowplow-storage-data-models"
+    ],
+    "3. R Analytics": [
+      "r-analytics-intro"
+    ]
   }
 }

@@ -46,8 +46,9 @@ const users = [
 
 const siteConfig = {
   title: 'Mojito', // Title for your website.
-  tagline: 'Launch, publish & report on your experiments via Git & CI',
-  url: 'https://mojito.onrender.com',//https://www.mojito.mx', // Your website URL
+  tagline: 'Build, launch & report on experiments via Git & CI',
+  url: 'https://mojito.mx', // Your website URL
+
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -65,11 +66,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'Get started'},
+    {doc: 'home', label: 'Docs'},
+    //{doc: 'home', label: 'Get started'},
     {href: 'https://mintmetrics.io/contact/', label: 'Help'},
     {href: 'https://www.github.com/mint-metrics/mojito', label: 'Github'},
-    //{blog: true, label: 'Blog'},
+    {search: true},
   ],
 
   // If you have users set above, you add it here:
@@ -82,8 +83,8 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#134897',
-    secondaryColor: '#0d3269',
+    primaryColor: '#153c6c',
+    secondaryColor: '#000',
   },
 
   /* Custom fonts for website */
@@ -109,7 +110,16 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js', 
+    '//d1xafqim8ep2fx.cloudfront.net/js/mintmetrics.js'
+  ],
+
+  algolia: {
+    apiKey: 'bd8462d0cdd55b4d467567530818ee84',
+    indexName: 'mojito-docs',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

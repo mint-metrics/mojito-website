@@ -37,19 +37,23 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <a href={this.docUrl('home', this.props.language)}>
+              Overview of Mojito
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('js-delivery-intro', this.props.language)}>
+              Mojito JS library
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.docUrl('snowplow-storage-intro', this.props.language)}>
+              Mojito Storage docs
+            </a>
+            <a href={this.docUrl('r-analytics-intro', this.props.language)}>
+              Mojito Analytics docs
             </a>
           </div>
           <div>
             <h5>More</h5>
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <a href="https://mintmetrics.io/">Mint Metrics</a>
             <a href="https://github.com/mint-metrics/mojito">GitHub</a>
             <a
               className="github-button"
