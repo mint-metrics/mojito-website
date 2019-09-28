@@ -116,8 +116,8 @@ const siteConfig = {
   ],
 
   algolia: {
-    apiKey: 'bd8462d0cdd55b4d467567530818ee84',
-    indexName: 'mojito-docs',
+    apiKey: 'fb512391b69cbe072f0ed74c938f64bc',
+    indexName: 'mojito_mint_metrics',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
 
