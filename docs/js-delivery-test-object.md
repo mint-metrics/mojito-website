@@ -90,7 +90,7 @@ Parameter | Description
 **css** <br> Type: *string* <br> *Optional* | Shared CSS for the test object that is applied to all recipes. <br>`JS format`: Expects a JS string of CSS styles. <br>`YAML format`: Expects a relative path to a CSS file.
 **divertTo** <br> Type: *string* <br> *Optional* | Enable divert mode to send all eligible traffic into a particular recipe's key.
 **id** <br> Type: *string* <br> *Required* | A canonical test object ID by which subjects' assignments are recorded against. 
-**js** <br> Type: *function* <br> *Required* | Shared JS for the test object that is applied to all recipes. <br>`JS format`: Expects a valid JavaScript function on this key. <br>`YAML format`: Expects a relative path to a JS file with that function.
+**js** <br> Type: *function/object* <br> *Optional* | Shared JS function or object for the test object that is applied to all recipes. <br>`JS format`: Expects a valid JavaScript function on this key. <br>`YAML format`: Expects a relative path to a JS file with that function/object.
 **name** <br> Type: *string* <br> *Required* | The name of the test object that's useful in tracking.
 **recipes** <br> Type: *object* <br> *Required* | An object containing the definition of available recipes.
 **sampleRate** <br> Type: *number* <br> *Required* | The percentage of traffic to assign into the experiment between 0 and 1 (where 1 is 100%)
@@ -101,7 +101,7 @@ Parameter | Description
 
 Parameter | Description
 --|--
-**{{recipeId}}** <br> Type: *string* <br> *Required* | The canonical key that references a test object within the cookies and preview URLs. E.g. A recipe ID of `a` would be accesible through a preview URL like: `https://www.example.com/?mojito_w12=a`
+**{{recipeId}}** <br> Type: *string* <br> *Required* | The canonical key that references a test object within the cookies and preview URLs. E.g. A `recipeID` of `a` would be accesible through a preview URL like: `https://www.example.com/?mojito_w12=a`
 
 ## Recipe objects sub-level
 
