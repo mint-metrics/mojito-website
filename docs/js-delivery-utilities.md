@@ -1,7 +1,7 @@
 ---
 id: js-delivery-utilities
 title: Utility functions in Mojito JS Delivery
-sidebar_label: Mojito Utilities
+sidebar_label: Utility functions
 ---
 
 We've baked a series of utility functions into Mojito which we think are handy for a wide range of experiments. We often encounter race conditions or are waiting for an element to exist before we can do something on the page. These utilities will allow you to overcome the majority of these issues.

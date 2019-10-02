@@ -18,7 +18,14 @@
           "js-delivery-hosting-snippet"
         ]
       },
-      "js-delivery-utilities"
+      {
+        "type": "subcategory",
+        "label": "API reference",
+        "ids": [
+          "js-delivery-test-object",
+          "js-delivery-utilities"
+        ]
+      }
     ],
     "2. Snowplow Storage": [
       "snowplow-storage-intro",
