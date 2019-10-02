@@ -6,7 +6,7 @@ sidebar_label: Test object parameters
 
 The test object contains everything an experiment needs to run, including the trigger, tracking information and recipe code (or variants). When you pass all this information into the ```Mojito.addTest()``` function, Mojito will execute all the logic in your experiment based on its order of execution.
 
-## Example test objects in JS & YAML
+## Example test objects in `JS` & `YAML` formats
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
@@ -92,7 +92,7 @@ Parameter | Description
 **id** <br> Type: *string* <br> *Required* | A canonical test object ID by which subjects' assignments are recorded against. 
 **js** <br> Type: *function/object* <br> *Optional* | Shared JS function or object for the test object that is applied to all recipes. <br>`JS format`: Expects a valid JavaScript function on this key. <br>`YAML format`: Expects a relative path to a JS file with that function/object.
 **name** <br> Type: *string* <br> *Required* | The name of the test object that's useful in tracking.
-**recipes** <br> Type: *object* <br> *Required* | An object containing the definition of available recipes.
+[**recipes**](#recipes-object) <br> Type: *object* <br> *Required* | An object containing the definition of available recipes. [See object definition](#recipes-object)
 **sampleRate** <br> Type: *number* <br> *Required* | The percentage of traffic to assign into the experiment between 0 and 1 (where 1 is 100%)
 **state** <br> Type: *string* <br> *Required* | A test object's state. Can be either: <br> `live` - in the container, accepting traffic into the experiment <br>`staging` - built into the container but not accepting traffic without a preview URL <br>`inactive` - not parsed or built into the container
 **trigger** <br> Type: *function* <br> *Required* | A JavaScript function executed as soon as the test object is loaded and can be used to conditionally activate an experiment. <br>`JS format`: Expects a valid JavaScript function on this key. <br>`YAML format`: Expects a relative path to a JS file with that function.
@@ -101,7 +101,7 @@ Parameter | Description
 
 Parameter | Description
 --|--
-**{{recipeId}}** <br> Type: *string* <br> *Required* | The canonical key that references a test object within the cookies and preview URLs. E.g. A `recipeID` of `a` would be accesible through a preview URL like: `https://www.example.com/?mojito_w12=a`
+[**{{recipeId}}**](#recipe-objects-sub-level) <br> Type: *string* <br> *Required* | The canonical key that references a test object within the cookies and preview URLs. [See object definition](#recipe-objects-sub-level). E.g. A `recipeID` of `a` would be accesible through a preview URL like: `https://www.example.com/?mojito_w12=a`
 
 ## Recipe objects sub-level
 
