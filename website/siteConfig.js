@@ -55,6 +55,7 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   repoUrl: 'https://github.com/mint-metrics/mojito',
+  editUrl: 'https://github.com/mint-metrics/mojito-website/edit/master/docs/',
   twitterUsername: 'mintmetrics_io',
 
   // Used for publishing and more
