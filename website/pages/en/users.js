@@ -30,12 +30,12 @@ class Users extends React.Component {
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
-              <h1>Who is Using This?</h1>
-              <p>This project is used by many folks</p>
+              <h1>Who is using Mojito?</h1>
+              <p>Here's a few of our users.</p>
             </div>
             <div className="logos">{showcase}</div>
-            <p>Are you using this project?</p>
-            <a href={editUrl} className="button">
+            <p>Are you using Mojito?</p>
+            <a href="https://github.com/mint-metrics/mojito-website/edit/master/website/siteConfig.js" className="button">
               Add your company
             </a>
           </div>

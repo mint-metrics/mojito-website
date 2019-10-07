@@ -14,34 +14,34 @@ const users = [
     caption: 'Mint Metrics',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/img/user-logos/mintmetrics.png',
+    infoLink: 'https://mintmetrics.io/',
     pinned: true,
   },
-  {
-    caption: 'Menulog',
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'Eat Now',
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'TFE Hotels',
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'ME Bank',
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.mebank.com.au/',
-    pinned: true,
-  },
+  // {
+  //   caption: 'Menulog',
+  //   image: '/img/undraw_open_source.svg',
+  //   infoLink: 'https://www.facebook.com',
+  //   pinned: true,
+  // },
+  // {
+  //   caption: 'Eat Now',
+  //   image: '/img/undraw_open_source.svg',
+  //   infoLink: 'https://www.facebook.com',
+  //   pinned: true,
+  // },
+  // {
+  //   caption: 'TFE Hotels',
+  //   image: '/img/undraw_open_source.svg',
+  //   infoLink: 'https://www.facebook.com',
+  //   pinned: true,
+  // },
+  // {
+  //   caption: 'ME Bank',
+  //   image: '/img/undraw_open_source.svg',
+  //   infoLink: 'https://www.mebank.com.au/',
+  //   pinned: true,
+  // },
 ];
 
 const siteConfig = {
@@ -75,7 +75,7 @@ const siteConfig = {
   ],
 
   // If you have users set above, you add it here:
-  //users,
+  users,
 
   /* path to images for header/footer */
   headerIcon: 'img/android-icon-192x192.png',
