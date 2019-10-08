@@ -147,28 +147,39 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'Skip the WYSIWYG & let your developers use the tools they\'re familiar with.',
+            content: 'VS Code, Vim, Sublime, R Studio? Let your developers build experiments using their favourite tools',
             image: `${baseUrl}img/undraw_version_control_9bpv.svg`,
-            imageAlign: 'top',
-            title: 'Build, code-review & QA experiments using git',
+            imageAlign: 'bottom',
+            title: 'Build, test & launch experiments with git',
           },
           {
-            content: 'An order of magnitude smaller than paid SaaS solutions\' libraries - You\'ll never know it was there',
+            content: 'An order of magnitude smaller than SaaS solutions\' libraries - keep your site fast',
             image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'top',
-            title: 'Less than 5kb for the library',
+            imageAlign: 'bottom',
+            title: 'Front-end library >5kb gzipped & minified',
           },
           {
-            content: 'Use gradual ramp-up and error tracking to ensure your experiments don\'t break mission-critical applications',
+            content: 'Use gradual ramp-up & error tracking to protect your mission-critical applications from bugs',
             image: `${baseUrl}img/undraw_security_o890.svg`,
-            imageAlign: 'top',
+            imageAlign: 'bottom',
             title: 'Launch confidently with error tracking & handling',
           },
           {
-            content: 'Launch experiments using the CLI or Bitbucket pipelines into secure environments that you control and manage.',
+            content: 'Launch experiments from your CLI or CI tools into your own environments',
             image: `${baseUrl}img/undraw_uploading_go67.svg`,
-            imageAlign: 'top',
-            title: 'Continuous integration into your own environments',
+            imageAlign: 'bottom',
+            title: 'Host experiments securely in your environments',
+          },
+        ]}
+      </Block>
+    );
+
+    const Demo = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/VtxnN6ngGzg' frameborder='0' allowfullscreen></iframe></div>",
           },
         ]}
       </Block>
@@ -191,8 +202,8 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
+          <h2>Who is using Mojito?</h2>
+          <p>Mojito powers experimentation at these companies</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
@@ -208,6 +219,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
+          <Demo />
           <Showcase />
         </div>
       </div>
@@ -215,6 +227,6 @@ class Index extends React.Component {
   }
 }
 
-Index.title = 'Mojito Docs - Open source A/B testing framework';
+Index.title = 'Open source A/B split testing tool - Mojito';
 
 module.exports = Index;
