@@ -20,9 +20,9 @@ Flags | Description
 --|--
 N/A | &nbsp;
 
-### Example
+### Example: Upgrading Mojito library
 
-Imagine you have updated your Mojito library and you want to check it's working correctly. Running `test` will show you whether or not the `lib/mojito.js` library passes all the tests.
+Imagine you upgraded your Mojito library to the latest version and you want to check it's working correctly against the full test suite. Running `test` will run the `lib/mojito.js` library through all available tests.
 
 ```shell
 $ gulp test
@@ -70,16 +70,16 @@ The output of this script will save your mojito container into both minified and
 
 ### Commands
 
- - `gulp scripts` or `gulp`
+ - `gulp scripts` or `gulp` (default task)
 
 
 Flags | Description
 --|--
 N/A | &nbsp;
 
-### Example
+### Example: Build your container to a new test
 
-Imagine you've just created a new experiment and you want to build it into your Mojito container. Running `gulp scripts` will build the container and provide a summary of the experiments inside it.
+Imagine you've just created a new experiment (Wave ID: `w2`) and you want to build it into your Mojito container. Running `gulp scripts` will build the container and provide a summary of the experiments inside it.
 
 ```shell
 $ gulp scripts
@@ -92,10 +92,12 @@ Mojito container built with 2 tests (4.78 KB):
   Inactive (1)
 ```
 
+In the output above, you can see `w2` has been included in your Mojito container with state set to `staging`.
+
 
 ## gulp set
 
-Sets the `state` of an experiment and/or `divert` an experiment's traffic to a particular `recipe`.
+Sets the `state` of an experiment and/or can `divert` an experiment's traffic to a particular `recipe`.
 
 ### Commands
 
@@ -111,9 +113,11 @@ Flags | Description
 --inactive [waveid (required)] | Change a given `wave ID`'s state to `inactive`. The experiment will not be built into the container, placing it in an archived state.
 --divert [waveid (required)] --recipe [recipeid (required)] | Set the `divertTo` flag of a particular `wave ID`, so all users will be diverted into the specified test's `recipe ID`. This does not affect the `state` of an experiment.
 
-### Example: Publishing a test
+### Example: Sending a test live
 
-You've completed code review and QA on your experiment and now you want to send it live so users will be accepted into the test. Set you experiment to go live, now:
+You've completed code review/QA on your experiment (Wave ID: `aa1`) and now you want to send it live so users will be bucketed into the test. 
+
+To set your `aa1` experiment to state `live` issue the command:
 
 ```shell
 $ gulp set --live aa1
@@ -123,13 +127,13 @@ $ gulp set --live aa1
 Test aa1 has been changed to live successfully.
 ```
 
-Next time you run `gulp scripts` and build your container, your `aa1` test object will be built into the container as a live experiment.
+Then, when you next run `gulp scripts`, and build your container, your `aa1` test will readily bucket users into the test.
 
 ### Example: Divert all traffic to a particular recipe
 
-You just finished your experiment (Wave ID: `w1`) and the Treatment group (Recipe ID: `1`) is working brilliantly - now begins the work to hard-code the treatment. However your business has targets to hit and it wants to reap the benefits of the experiment whilst the feature is being productionised. 
+You just finished running your experiment (Wave ID: `w1`) and the Treatment group (Recipe ID: `1`) lifted conversion rates massively. Now the business is busy productionising the experiment and hardcoding it into your app. However your business wants to take advantage of the higher conversion rate of the treatment whilst it gets developed into the monolithic web app. 
 
-You can force all eligible users into the Treatment group, bypassing the usual assignment: 
+Set the test to force eligible users into the Treatment group, bypassing the usual assignment: 
 
 ```shell
 $ gulp set --divert w1 --recipe 1
@@ -139,11 +143,13 @@ $ gulp set --divert w1 --recipe 1
 Test w1 has been diverted to 1 (Treatment) successfully.
 ```
 
-And when you run `gulp scripts`, your `w1` test object will no longer show up in your container.
+Note that the test needs to be `live` before you can divert traffic into it.
 
 ### Example: Stop and archive a test
 
-Your experiment (Wave ID: `w1`) has served it's purpose on the site and it's now time to switch it off. Simply set it to inactive: 
+Your experiment (Wave ID: `w1`) has served it's purpose well and it's now time to switch off. 
+
+Simply set it to `inactive`, like so: 
 
 ```shell
 $ gulp set --inactive w1
@@ -153,12 +159,12 @@ $ gulp set --inactive w1
 Test w1 has been changed to inactive successfully.
 ```
 
-And when you run `gulp scripts`, your `w1` test object will no longer show up in your container.
+And when you next run `gulp scripts`, your `w1` test object will no longer show up in your container, freeing up space inside your container.
 
 
 ## gulp new
 
-Creates the scaffolding for a new `wave`, `demo` or `aa` test. Outputs all the required files such as `lib/waves/{{waveid}}/config.yml`, `lib/waves/{{waveid}}/trigger.js`, `lib/waves/{{waveid}}/1.js` and `lib/waves/{{waveid}}/1.css` depending on the option you chose.
+Creates the scaffolding for a new `wave`, `demo` or `aa` test. Generates all the required files such as `lib/waves/{{waveid}}/config.yml`, `lib/waves/{{waveid}}/trigger.js`, `lib/waves/{{waveid}}/1.js` and `lib/waves/{{waveid}}/1.css` depending on the type of experiment.
 
 ### Commands
 
@@ -169,14 +175,16 @@ Creates the scaffolding for a new `wave`, `demo` or `aa` test. Outputs all the r
 
 Flags | Description
 --|--
---aa [waveid (required)] | Scaffolds a new AA test for a given `waveid`, so you can check your instrumentation.
+--aa [waveid (required)] | Scaffolds files for new A/A test for a given `waveid`, so you can check your instrumentation.
 --demo [waveid (required)] | Scaffolds a new demo test with a given `waveid`, just so we can show you how Mojito tests work.
 --wave [waveid (required)] | Scaffolds a standard test config file with a given `waveid`, so you can speed up your test development by using safe defaults.
 
 
 ### Example: Running an A/A test
 
-You've just set up Mojito on your site and you want to check you have proper random assignment. This is really easy to setup:
+You're a new Mojito user and you want to check you have proper random assignment by running an A/A test.
+
+Call `gulp new` with the `--aa` flag and an appropriate `waveid`:
 
 ```shell
 $ gulp new --aa aa1
@@ -198,7 +206,7 @@ Easy, right?
 
 ## gulp publish
 
-Publishes the container files inside `dist/*.js` to the Amazon S3 paths configured under your repository's `config.js` folder. Defaults to publishing into your staging environment.
+Publishes the built containers inside `dist/*.js` to the Amazon S3 paths configured under your repository's `config.js` folder. Defaults to publishing into your staging environment.
 
 ### Commands
 
@@ -214,9 +222,9 @@ Flags | Description
 
 ### Example: Publishing a test to your staging container
 
-You're building an experiment and you want to check it's working properly in your staging container before you move it into production.
+You're building an experiment and you want to check it's working properly in your staging container before you roll it out to production.
 
-Assuming you have built your container with `gulp scripts`, you can just run `gulp publish` to upload it to S3, like so:
+Assuming you've built your container with `gulp scripts`, you can go ahead and use `gulp publish` to upload it to S3:
 
 ```shell
 $ gulp publish
@@ -227,4 +235,4 @@ $ gulp publish
 [16:26:23] Finished 'publish' after 14 s
 ```
 
-Once published, it will be immediately available from your S3 container.
+Once published, it will be immediately available from your S3 container's URL.
