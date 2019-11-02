@@ -129,9 +129,109 @@ class Index extends React.Component {
       </Block>
     );
 
-    const LearnHow = () => (
+    const Experiments = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            content:
+              'Keep your experiment configuration readable, auditable and unobfuscated for effective code review and QA.',
+            title: 'Define experiments in YAML or JS',
+          },
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+
+    const SingleTag = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
+          {
+            content:
+              'Avoid costly, time consuming deployments of your web app and use Mojito to run experiments everywhere.',
+            title: 'Install one tag to run experiments everywhere',
+          },
+        ]}
+      </Block>
+    );
+
+    const ErrorHandling = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            content:
+              'Any errors occuring within the variant code fires events so you can track and handle issues to protect your users and applications.',
+            title: 'Error tracking & handling to protect your mission-critical apps',
+          },
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+
+    const SelfHosted = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
+          {
+            content:
+              'Secure your web app by removing 3rd party scripts & trackers - no more "surprise" updates to your split testing container code.',
+            title: 'Host experiment code from your secure environments',
+          },
+        ]}
+      </Block>
+    );
+
+    const LightFootprint = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            content:
+              'Improve page load times with a testing tool that\'s an order of magnitude lighter than competing SaaS solutions.',
+            title: 'Less than 5kb for the base library',
+          },
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+
+    const TemplateableReports = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
+          {
+            content:
+              'Generate custom HTML reports from all the event data in your data warehouse. Say goodbye to data silos!',
+            title: 'Templatable Rmarkdown reports that you own',
+          },
+        ]}
+      </Block>
+    );
+
+    const CompareTable = () => (
       <Block background="light">
         {[
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
           {
             content:
               'Avoid test flicker with custom triggers that activate your experiment right when you need them.',
@@ -219,6 +319,12 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
+          <Experiments />
+          <SingleTag />
+          <ErrorHandling />
+          <SelfHosted />
+          <LightFootprint />
+          <TemplateableReports />
           <Demo />
           <Showcase />
         </div>
