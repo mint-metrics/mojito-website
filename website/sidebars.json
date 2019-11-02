@@ -23,7 +23,8 @@
         "label": "API reference",
         "ids": [
           "js-delivery-test-object",
-          "js-delivery-utilities"
+          "js-delivery-utilities",
+          "js-delivery-gulp-commands"
         ]
       }
     ],
