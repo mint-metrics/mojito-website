@@ -7,11 +7,11 @@ title: Mojito framework overview
 
 Mojito is a modular, source-controlled split testing framework that lets you build, launch and analyse experiments via Git/CI.
 
-Mojito is comprised of 3 core modules including: 
+It is comprised of 3 core modules that can be used independently of each other or in unison: 
 
-1. **[Mojito JS Delivery](https://github.com/mint-metrics/mojito-js-delivery)**: Front-end library for running experiments on your site.
-2. **[Mojito Snowplow Storage](https://github.com/mint-metrics/mojito-snowplow-storage)**: Data models & events for tracking experiments.
-3. **[Mojito R Analytics](https://github.com/mint-metrics/mojito-r-analytics)**: Templatable RMarkdown experiment reports.
+1. **[Mojito JS Delivery](js-delivery-intro)**: Run experiments on your site through JS. ([Github](https://github.com/mint-metrics/mojito-js-delivery))
+2. **[Mojito Snowplow Storage](snowplow-storage-intro)**: Events & data models for tracking into Snowplow Analytics. ([Github](https://github.com/mint-metrics/mojito-snowplow-storage))
+3. **[Mojito R Analytics](r-analytics-intro)**: Templatable RMarkdown experiment reports. ([Github](https://github.com/mint-metrics/mojito-r-analytics))
 
 ![Mojito's 3 components](/img/modules.png)
 
@@ -130,6 +130,17 @@ For this experiment, we'll report on transactions and page views:
 You don't exactly need Snowplow Analytics to use Mojito. You can also track experiments to wherever you like, via a custom storage adapter. E.g. To Google Tag Manager, Adobe etc.
 
 You can even [hook Mojito Delivery up to Google Optimize's reports for free](https://mintmetrics.io/web-analytics/track-your-optimizely-vwo-tests-inside-google-optimize/).
+
+## Server-side and app split testing
+
+Currently we support only front-end JavaScript experimentation through our **Delivery** module. Until we build out an SDK for apps and server-side code, we support experiments on these platforms through our **Storage** and **Analytics** componenets.
+
+## Using modules independently
+
+The modular structure makes it easy to use components of Mojito independently of one another. We often use Mojito components individually when: 
+
+1. Existing SaaS tool like Optimizely, VWO or Convert.com is implemented as a **Delivery** mechanism: Track experiments into [Storage](snowplow-storage-intro) and [Analytics](r-analytics-intro) reports
+2. Existing **Storage** target and **Analytics** reports, such as Google Optimize are being used: Build and launch experiments from Git/CI with [Mojito's JS split testing library](js-delivery-intro)
 
 ## Credits
 
