@@ -18,6 +18,7 @@
           "js-delivery-hosting-snippet"
         ]
       },
+      "js-delivery-upgrading",
       {
         "type": "subcategory",
         "label": "API reference",
