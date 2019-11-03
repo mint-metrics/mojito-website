@@ -129,16 +129,16 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Experiments = () => (
+    const ExperimentDefinition = () => (
       <Block layout="twoColumn" background="light">
         {[
           {
             content:
-              'Keep your experiment configuration readable, auditable and unobfuscated for effective code review and QA.',
+              `Keep your experiment configuration readable, auditable and unobfuscated for effective code review and QA. Read our <a href="${baseUrl}docs/js-delivery-test-object">test object schema</a>.`,
             title: 'Define experiments in YAML or JS',
           },
           {
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/experiment-definition.png`,
             imageAlign: 'right',
           },
         ]}
@@ -149,13 +149,13 @@ class Index extends React.Component {
       <Block layout="twoColumn" background="light">
         {[
           {
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/snippet.png`,
             imageAlign: 'right',
           },
           {
             content:
-              'Avoid costly, time consuming deployments of your web app and use Mojito to run experiments everywhere.',
-            title: 'Install one tag to run experiments everywhere',
+              'Accelerate your test launch velocity & free your experiments from arduous deployments of your monolithic web application.',
+            title: 'One tag to run experiments everywhere',
           },
         ]}
       </Block>
@@ -167,10 +167,10 @@ class Index extends React.Component {
           {
             content:
               'Any errors occuring within the variant code fires events so you can track and handle issues to protect your users and applications.',
-            title: 'Error tracking & handling to protect your mission-critical apps',
+            title: 'Protects your users & mission-critical apps from bugs',
           },
           {
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/undraw_cancel.svg`,
             imageAlign: 'right',
           },
         ]}
@@ -181,13 +181,13 @@ class Index extends React.Component {
       <Block layout="twoColumn" background="light">
         {[
           {
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/undraw_maintenance.svg`,
             imageAlign: 'right',
           },
           {
             content:
-              'Secure your web app by removing 3rd party scripts & trackers - no more "surprise" updates to your split testing container code.',
-            title: 'Host experiment code from your secure environments',
+              'Secure your application by removing 3rd party scripts & trackers. No more "surprise" updates to your split testing container & no more data leakage from your application.',
+            title: 'Host experiments from your secure environment',
           },
         ]}
       </Block>
@@ -198,11 +198,11 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Improve page load times with a testing tool that\'s an order of magnitude lighter than competing SaaS solutions.',
+              'Improve page load times with a testing tool that\'s an order of magnitude lighter than competing SaaS solutions. * Tested 2019-05-07',
             title: 'Less than 5kb for the base library',
           },
           {
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/speedtest.png`,
             imageAlign: 'right',
           },
         ]}
@@ -213,12 +213,12 @@ class Index extends React.Component {
       <Block layout="twoColumn" background="light">
         {[
           {
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/reports.png`,
             imageAlign: 'right',
           },
           {
             content:
-              'Generate custom HTML reports from all the event data in your data warehouse. Say goodbye to data silos!',
+              'Generate custom HTML reports from all the event data in your data warehouse. Keep your data sovreignty & minimise data siloing.',
             title: 'Templatable Rmarkdown reports that you own',
           },
         ]}
@@ -285,6 +285,29 @@ class Index extends React.Component {
       </Block>
     );
 
+    const QuickStart = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              '<h2>Quick start</h2>\
+              <p>You\'ll need <a href="https://nodejs.org/en/">Node</a>, <a href="https://www.npmjs.com/get-npm">npm</a> and <a href="https://gulpjs.com/">Gulp CLI</a> installed.</p>\
+              <pre style="max-width: 900px;margin-left: auto;margin-right: auto;"><code class="hljs css language-shell" style="text-align: left;">\
+<span class="comment"># Download Mojito JS Delivery</span><br />\
+<span class="command">git clone https://github.com/mint-metrics/mojito-js-delivery.git</span><br />\
+<span class="comment">cd mojito-js-delivery</span><br />\
+<span class="comment">npm install</span><br />\
+<br />\
+<span class="comment"># Create your first test</span><br />\
+<span class="comment">gulp new --demo w1</span><br />\
+<span class="comment">gulp set --live w1</span><br />\
+<span class="comment">gulp scripts</span>\
+              </code></pre>',
+          },
+        ]}
+      </Block>
+    );
+
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
@@ -319,13 +342,14 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <Experiments />
+          <ExperimentDefinition />
           <SingleTag />
           <ErrorHandling />
           <SelfHosted />
           <LightFootprint />
           <TemplateableReports />
           <Demo />
+          <QuickStart />
           <Showcase />
         </div>
       </div>
