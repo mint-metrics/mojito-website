@@ -134,8 +134,8 @@ class Index extends React.Component {
         {[
           {
             content:
-              `Keep your experiment configuration readable, auditable and unobfuscated for effective code review and QA. Read our <a href="${baseUrl}docs/js-delivery-test-object">test object schema</a>.`,
-            title: 'Define experiments in YAML or JS',
+              `Keep your experiment config in one place so you can perform effective code review & QA over git. Read our <a href="${baseUrl}docs/js-delivery-test-object">test object schema</a>.`,
+            title: 'Define experiments in YAML & JS',
           },
           {
             image: `${baseUrl}img/experiment-definition.png`,
@@ -154,8 +154,8 @@ class Index extends React.Component {
           },
           {
             content:
-              'Accelerate your test launch velocity & free your experiments from arduous deployments of your monolithic web application.',
-            title: 'One tag to run experiments everywhere',
+              'Accelerate your test launch velocity & free your experimentation program from your monolithic web application deployments.',
+            title: 'One tag for experimenting everywhere',
           },
         ]}
       </Block>
@@ -166,8 +166,8 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Any errors occuring within the variant code fires events so you can track and handle issues to protect your users and applications.',
-            title: 'Protects your users & mission-critical apps from bugs',
+              'Any errors thrown from tests will fire events so you can track & handle problems before they hurt the user experience.',
+            title: 'Protect your users & applications from nasty bugs',
           },
           {
             image: `${baseUrl}img/undraw_cancel.svg`,
@@ -186,8 +186,8 @@ class Index extends React.Component {
           },
           {
             content:
-              'Secure your application by removing 3rd party scripts & trackers. No more "surprise" updates to your split testing container & no more data leakage from your application.',
-            title: 'Host experiments from your secure environment',
+              'Keep your application secure from 3rd party scripts & trackers. Avoid those "surprise" updates to your split testing container & stop your users\' PII data from leaking to prying eyes.',
+            title: 'Host experiments from your own environment',
           },
         ]}
       </Block>
@@ -198,8 +198,8 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Improve page load times with a testing tool that\'s an order of magnitude lighter than competing SaaS solutions. * Tested 2019-05-07',
-            title: 'Less than 5kb for the base library',
+              'Switching to Mojito from a SaaS tool can reduce page load times because it\'s an order of magnitude lighter and can be served from your own domain. * Tested 2019-05-07',
+            title: 'Improve your page speed with a small <5kb library',
           },
           {
             image: `${baseUrl}img/speedtest.png`,
@@ -218,8 +218,8 @@ class Index extends React.Component {
           },
           {
             content:
-              'Generate custom HTML reports from all the event data in your data warehouse. Keep your data sovreignty & minimise data siloing.',
-            title: 'Templatable Rmarkdown reports that you own',
+              'Build custom HTML reports using all data in your data warehouse. Plus, you can keep your experiment results even if you decide to decide to change testing tools.',
+            title: 'Own your data with powerful Rmarkdown reports',
           },
         ]}
       </Block>
@@ -247,28 +247,28 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'VS Code, Vim, Sublime, R Studio? Let your developers build experiments using their favourite tools',
+            content: 'VS Code, Vim, Sublime, R Studio? Your team can run experiments with their favourite tools',
             image: `${baseUrl}img/undraw_version_control_9bpv.svg`,
             imageAlign: 'bottom',
             title: 'Build, test & launch experiments with git',
           },
           {
-            content: 'An order of magnitude smaller than SaaS solutions\' libraries - keep your site fast',
+            content: 'Keep your site fast with a split testing library that\'s an order of magnitude smaller than SaaS solutions',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'bottom',
             title: 'Front-end library >5kb gzipped & minified',
           },
           {
-            content: 'Use gradual ramp-up & error tracking to protect your mission-critical applications from bugs',
+            content: 'Protect your users & applications from bugs with gradual ramp-up, error tracking & error handling',
             image: `${baseUrl}img/undraw_security_o890.svg`,
             imageAlign: 'bottom',
             title: 'Launch confidently with error tracking & handling',
           },
           {
-            content: 'Launch experiments from your CLI or CI tools into your own environments',
+            content: 'Launch experiments from your CLI or CI tools into environments you control',
             image: `${baseUrl}img/undraw_uploading_go67.svg`,
             imageAlign: 'bottom',
-            title: 'Host experiments securely in your environments',
+            title: 'Self-host experiments from your environment',
           },
         ]}
       </Block>
@@ -298,11 +298,12 @@ class Index extends React.Component {
 <span class="comment">cd mojito-js-delivery</span><br />\
 <span class="comment">npm install</span><br />\
 <br />\
-<span class="comment"># Create your first test</span><br />\
+<div style="display:none;"><span class="comment"># Create your first test</span><br />\
 <span class="comment">gulp new --demo w1</span><br />\
-<span class="comment">gulp set --live w1</span><br />\
+<span class="comment">gulp set --live w1</span><br /></div>\
+<span class="comment"># Build your container into dist/mojito.js</span><br />\
 <span class="comment">gulp scripts</span>\
-              </code></pre>',
+</code></pre>',
           },
         ]}
       </Block>
