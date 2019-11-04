@@ -18,6 +18,7 @@
           "js-delivery-hosting-snippet"
         ]
       },
+      "js-delivery-upgrading",
       {
         "type": "subcategory",
         "label": "API reference",
@@ -30,6 +31,7 @@
     ],
     "2. Snowplow Storage": [
       "snowplow-storage-intro",
+      "snowplow-storage-events",
       "snowplow-storage-data-models"
     ],
     "3. R Analytics": [
