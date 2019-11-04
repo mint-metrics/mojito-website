@@ -129,9 +129,109 @@ class Index extends React.Component {
       </Block>
     );
 
-    const LearnHow = () => (
+    const ExperimentDefinition = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            content:
+              `Keep your experiment config in one place so you can perform effective code review & QA over git. Read our <a href="${baseUrl}docs/js-delivery-test-object">test object schema</a>.`,
+            title: 'Define experiments in YAML & JS',
+          },
+          {
+            image: `${baseUrl}img/experiment-definition.png`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+
+    const SingleTag = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            image: `${baseUrl}img/snippet.png`,
+            imageAlign: 'right',
+          },
+          {
+            content:
+              'Accelerate your test launch velocity & free your experimentation program from your monolithic web application deployments.',
+            title: 'One tag for experimenting everywhere',
+          },
+        ]}
+      </Block>
+    );
+
+    const ErrorHandling = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            content:
+              'Any errors thrown from tests will fire events so you can track & handle problems before they hurt the user experience.',
+            title: 'Protect your users & applications from nasty bugs',
+          },
+          {
+            image: `${baseUrl}img/undraw_cancel.svg`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+
+    const SelfHosted = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            image: `${baseUrl}img/undraw_maintenance.svg`,
+            imageAlign: 'right',
+          },
+          {
+            content:
+              'Keep your application secure from 3rd party scripts & trackers. Avoid those "surprise" updates to your split testing container & stop your users\' PII data from leaking to prying eyes.',
+            title: 'Host experiments from your own environment',
+          },
+        ]}
+      </Block>
+    );
+
+    const LightFootprint = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            content:
+              'Switching to Mojito from a SaaS tool can reduce page load times because it\'s an order of magnitude lighter and can be served from your own domain. * Tested 2019-05-07',
+            title: 'Improve your page speed with a small <5kb library',
+          },
+          {
+            image: `${baseUrl}img/speedtest.png`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+
+    const TemplateableReports = () => (
+      <Block layout="twoColumn" background="light">
+        {[
+          {
+            image: `${baseUrl}img/reports.png`,
+            imageAlign: 'right',
+          },
+          {
+            content:
+              'Build custom HTML reports using all data in your data warehouse. Plus, you can keep your experiment results even if you decide to decide to change testing tools.',
+            title: 'Own your data with powerful Rmarkdown reports',
+          },
+        ]}
+      </Block>
+    );
+
+    const CompareTable = () => (
       <Block background="light">
         {[
+          {
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+          },
           {
             content:
               'Avoid test flicker with custom triggers that activate your experiment right when you need them.',
@@ -147,28 +247,28 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'VS Code, Vim, Sublime, R Studio? Let your developers build experiments using their favourite tools',
+            content: 'VS Code, Vim, Sublime, R Studio? Your team can run experiments with their favourite tools',
             image: `${baseUrl}img/undraw_version_control_9bpv.svg`,
             imageAlign: 'bottom',
             title: 'Build, test & launch experiments with git',
           },
           {
-            content: 'An order of magnitude smaller than SaaS solutions\' libraries - keep your site fast',
+            content: 'Keep your site fast with a split testing library that\'s an order of magnitude smaller than SaaS solutions',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'bottom',
             title: 'Front-end library >5kb gzipped & minified',
           },
           {
-            content: 'Use gradual ramp-up & error tracking to protect your mission-critical applications from bugs',
+            content: 'Protect your users & applications from bugs with gradual ramp-up, error tracking & error handling',
             image: `${baseUrl}img/undraw_security_o890.svg`,
             imageAlign: 'bottom',
             title: 'Launch confidently with error tracking & handling',
           },
           {
-            content: 'Launch experiments from your CLI or CI tools into your own environments',
+            content: 'Launch experiments from your CLI or CI tools into environments you control',
             image: `${baseUrl}img/undraw_uploading_go67.svg`,
             imageAlign: 'bottom',
-            title: 'Host experiments securely in your environments',
+            title: 'Self-host experiments from your environment',
           },
         ]}
       </Block>
@@ -180,6 +280,30 @@ class Index extends React.Component {
           {
             content:
               "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/VtxnN6ngGzg' frameborder='0' allowfullscreen></iframe></div>",
+          },
+        ]}
+      </Block>
+    );
+
+    const QuickStart = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              '<h2>Quick start</h2>\
+              <p>You\'ll need <a href="https://nodejs.org/en/">Node</a>, <a href="https://www.npmjs.com/get-npm">npm</a> and <a href="https://gulpjs.com/">Gulp CLI</a> installed.</p>\
+              <pre style="max-width: 900px;margin-left: auto;margin-right: auto;"><code class="hljs css language-shell" style="text-align: left;">\
+<span class="comment"># Download Mojito JS Delivery</span><br />\
+<span class="command">git clone https://github.com/mint-metrics/mojito-js-delivery.git</span><br />\
+<span class="comment">cd mojito-js-delivery</span><br />\
+<span class="comment">npm install</span><br />\
+<br />\
+<div style="display:none;"><span class="comment"># Create your first test</span><br />\
+<span class="comment">gulp new --demo w1</span><br />\
+<span class="comment">gulp set --live w1</span><br /></div>\
+<span class="comment"># Build your container into dist/mojito.js</span><br />\
+<span class="comment">gulp scripts</span>\
+</code></pre>',
           },
         ]}
       </Block>
@@ -219,7 +343,14 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
+          <ExperimentDefinition />
+          <SingleTag />
+          <ErrorHandling />
+          <SelfHosted />
+          <LightFootprint />
+          <TemplateableReports />
           <Demo />
+          <QuickStart />
           <Showcase />
         </div>
       </div>
