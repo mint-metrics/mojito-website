@@ -24,6 +24,7 @@
         "label": "API reference",
         "ids": [
           "js-delivery-test-object",
+          "js-delivery-api-storage-adapter",
           "js-delivery-utilities"
         ]
       }
