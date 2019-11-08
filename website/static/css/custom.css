@@ -14,3 +14,22 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+.projectLogo {
+    justify-content: center !important;
+    position: static !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+.projectLogo img {
+    max-height: 175px !important;
+}
+
+.mainContainer .paddingTop {
+    padding-top: 0px !important;
+}
