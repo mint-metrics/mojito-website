@@ -131,9 +131,9 @@ You don't exactly need Snowplow Analytics to use Mojito. You can also track expe
 
 You can even [hook Mojito Delivery up to Google Optimize's reports for free](https://mintmetrics.io/web-analytics/track-your-optimizely-vwo-tests-inside-google-optimize/).
 
-## Server-side and app split testing
+## Server-side and app split testing libraries
 
-Currently we support only front-end JavaScript experimentation through our **Delivery** module. Until we build out an SDK for apps and server-side code, we support experiments on these platforms through our **Storage** and **Analytics** componenets.
+Currently we support only front-end JavaScript experimentation through our **Delivery** module. Until we build out SDKs for apps and server-side code, our support for experiments on these platforms is through our **Storage** and **Analytics** components.
 
 ## Using modules independently
 

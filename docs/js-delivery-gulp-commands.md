@@ -101,26 +101,26 @@ Sets the `state` of an experiment and/or can `divert` an experiment's traffic to
 
 ### Commands
 
- - `gulp set --live [waveid]`
+ - `gulp set --live [waveid] --traffic [samplerate]`
  - `gulp set --staging [waveid]`
  - `gulp set --inactive [waveid]`
  - `gulp set --divert [waveid] --recipe [recipeid]`
 
 Flags | Description
 --|--
---live [waveid (required)] | Change a given `wave ID`'s state to `live`, so new users can be assigned into the test. Live tests will be built into the container.
+--live [waveid (required)], --traffic [samplerate] (optional) | Change a given `wave ID`'s state to `live`, so new users can be assigned into the test. Live tests will be built into the container. Optionally, you can specify the sample rate of traffic to set the experiment live to between 0 and 1. The default traffic sample rate is set to 1 otherwise.
 --staging [waveid (required)] | Change a given `wave ID`'s state to `staging`, so new users won't be assigned into the test. Staging tests will be built into the container.
 --inactive [waveid (required)] | Change a given `wave ID`'s state to `inactive`. The experiment will not be built into the container, placing it in an archived state.
---divert [waveid (required)] --recipe [recipeid (required)] | Set the `divertTo` flag of a particular `wave ID`, so all users will be diverted into the specified test's `recipe ID`. This does not affect the `state` of an experiment.
+--divert [waveid (required)], --recipe [recipeid (required)] | Set the `divertTo` flag of a particular `wave ID`, so all users will be diverted into the specified test's `recipe ID`. This does not affect the `state` of an experiment.
 
 ### Example: Sending a test live
 
-You've completed code review/QA on your experiment (Wave ID: `aa1`) and now you want to send it live so users will be bucketed into the test. 
+You've completed code review/QA on your experiment (Wave ID: `aa1`) and now you want to send it live so 10% of users will be bucketed into the test. 
 
 To set your `aa1` experiment to state `live` issue the command:
 
 ```shell
-$ gulp set --live aa1
+$ gulp set --live aa1 --traffic 0.1
 [15:15:34] Using gulpfile ~/Documents/mojito-js-delivery/gulpfile.js
 [15:15:34] Starting 'set'...
 [15:15:34] Finished 'set' after 11 ms
@@ -164,20 +164,20 @@ And when you next run `gulp scripts`, your `w1` test object will no longer show 
 
 ## gulp new
 
-Creates the scaffolding for a new `wave`, `demo` or `aa` test. Generates all the required files such as `lib/waves/{{waveid}}/config.yml`, `lib/waves/{{waveid}}/trigger.js`, `lib/waves/{{waveid}}/1.js` and `lib/waves/{{waveid}}/1.css` depending on the type of experiment.
+Creates the scaffolding for a new `ab`, `aa` or `demo` test. Generates all the required files such as `lib/waves/{{waveid}}/config.yml`, `lib/waves/{{waveid}}/trigger.js`, `lib/waves/{{waveid}}/1.js` and `lib/waves/{{waveid}}/1.css` depending on the type of experiment.
 
 ### Commands
 
+ - `gulp new --ab [waveid]` 
  - `gulp new --aa [waveid]`
  - `gulp new --demo [waveid]`
- - `gulp new --wave [waveid]` 
 
 
 Flags | Description
 --|--
+--ab [waveid (required)] | Scaffolds a standard test config file with a given `waveid`, so you can speed up your test development by using safe defaults.
 --aa [waveid (required)] | Scaffolds files for new A/A test for a given `waveid`, so you can check your instrumentation.
 --demo [waveid (required)] | Scaffolds a new demo test with a given `waveid`, just so we can show you how Mojito tests work.
---wave [waveid (required)] | Scaffolds a standard test config file with a given `waveid`, so you can speed up your test development by using safe defaults.
 
 
 ### Example: Running an A/A test
@@ -235,4 +235,4 @@ $ gulp publish
 [16:26:23] Finished 'publish' after 14 s
 ```
 
-Once published, it will be immediately available from your S3 container's URL.
+Once published, it will be available from your S3 container's URL.
