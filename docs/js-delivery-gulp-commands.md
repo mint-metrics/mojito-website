@@ -77,7 +77,7 @@ Flags | Description
 --|--
 N/A | &nbsp;
 
-### Example: Build your container to a new test
+### Example: Build a new test into your container
 
 Imagine you've just created a new experiment (Wave ID: `w2`) and you want to build it into your Mojito container. Running `gulp scripts` will build the container and provide a summary of the experiments inside it.
 
