@@ -26,7 +26,8 @@
           "js-delivery-api-execution-order",
           "js-delivery-test-object",
           "js-delivery-api-storage-adapter",
-          "js-delivery-utilities"
+          "js-delivery-utilities",
+          "js-delivery-gulp-commands"
         ]
       }
     ],
