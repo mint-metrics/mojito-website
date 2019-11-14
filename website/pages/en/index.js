@@ -297,9 +297,10 @@ class Index extends React.Component {
 <span class="comment">cd mojito-js-delivery</span><br />\
 <span class="comment">npm install</span><br />\
 <br />\
-<div style="display:none;"><span class="comment"># Create your first test</span><br />\
+<span class="comment"># Create your first test</span><br />\
 <span class="comment">gulp new --demo w1</span><br />\
-<span class="comment">gulp set --live w1</span><br /></div>\
+<span class="comment">gulp set --live w1</span><br />\
+<br />\
 <span class="comment"># Build your container into dist/mojito.js</span><br />\
 <span class="comment">gulp scripts</span>\
 </code></pre>',
@@ -350,7 +351,6 @@ class Index extends React.Component {
           <TemplateableReports />
           <Demo />
           <QuickStart />
-          <Showcase />
         </div>
       </div>
     );
