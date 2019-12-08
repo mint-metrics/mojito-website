@@ -1,36 +1,27 @@
 ---
 id: js-delivery-setup
 title: Setting up experiments with Mojito JS Delivery
-sidebar_label: Experiment setup
+sidebar_label: Setup experiments
 ---
 
 There are two approaches to setup experiments in Mojito. The **gulp** builder supports both methods when building the JS container.
 
 1. **[Straight JS](#straight-js-setup)**: define experiment parameters, trigger code and variant code in a single JS file: `test-object.js`
 
-2. **[YAML](#yaml-setup)**: define experiment parameters in a YAML file: `config.yml`. All JS and CSS are separated into individual files.
+2. **[YAML / CLI *(recommended)*](#yaml-setup)**: define experiment parameters in a YAML file: `config.yml`. All JS and CSS are separated into individual files.
 
-We recommend the **YAML** approach for a few reasons:
-
-- Easier to read and setup - YAML abtracts away JS syntax around experiment configuration parameters.
-
-- Easier to develop experiments - chunking down JS & CSS is good practice; great for debugging and results in less code sphagetti.
-
-- Extra variant code minification - the YAML build path further minifies variant code like CSS to further reduce the weight of your container.
-
-- Great for code re-use and portability - e.g. send your developers winning variant code for permanent implementation which is easy to unpack and integrate.
-
-However, for the purposes of this guide, it's beneficial to first demonstrate a **straight JS** setup, as it better reflects how Mojito works under the hood.
-
-## Straight JS setup
-
-Let's create a simple experiment with the following parameters:
+## Let's setup a test with both methods, using these parameters
 
 Parameter | &nbsp;
 --- | ---
 Trigger | Activate when users enter your site from google
 Control variant | No change
 Treatment variant | Alert the user with a simple message
+
+
+For the purposes of this guide, it's beneficial to first demonstrate a **straight JS** setup, as it better reflects how Mojito works under the hood.
+
+## Straight JS setup
 
 Start by creating a file in your repo: 
 
@@ -67,24 +58,26 @@ That's all there is to this experiment. Many of the parameter keys and values ar
 
 ## YAML setup
 
-To setup the same experiment, start by creating:
+To setup the example experiment above, start by defining it on the command line:
 
-`repo/lib/waves/ex2/config.yml`
+```sh
+gulp new -ab ex1
+```
 
-Define experiment parameters in YAML:
+This will create a scaffold for your experiment under `repo/lib/waves/ex2/config.yml`. Now you can configure the test in YAML:
 
 ```yml
-id: ex2
-name: Google message YAML
-sampleRate: 1
 state: live
-trigger: trigger.js
+sampleRate: 1
+id: ex1
+name: Google message straight JS
 recipes:
-  0:
+  '0':
     name: Control
-  1:
+  '1':
     name: Treatment
-    js: treatment.js
+    js: 1.js
+trigger: trigger.js
 ```
 
 *Look familiar?*
@@ -100,7 +93,7 @@ function trigger(test){
 }
 ```
 
-`repo/lib/waves/ex2/treatment.js` contains variant code:
+`repo/lib/waves/ex2/1.js` contains variant code for variant number `1`:
 
 ```js
 function treatment(){
@@ -112,34 +105,39 @@ function treatment(){
 Your experiment directory should look like:
 
 ```
-ex2/
+ex1/
+  |-- 1.js
   |-- config.yml
-  |-- treatment.js
   |-- trigger.js
 ```
 
 With these files defined, the gulp builder will construct an experiment object resembling what we saw in the straight JS setup and stitch it into the container along with `mojito.js`.
 
-## Experiment shared code
+### Experiment shared code
 
 JS and CSS can have a shared scope within an experiment. E.g. two treatment variants might have some stying commonalities. We can cut down on repeated code by sharing common elements.
 
-### Experiment shared JS
+#### Shared JS
 
 Setup instructions:
 
-1. Create a JS file containing shared code in an experiment's directory
+1. Create a JS file containing shared code in an experiment's directory e.g. `repo/lib/waves/mytest/shared.js`
 2. In `config.yml`, point the root level `js` key to the file
-3. Any variant can now reference code within the shared JS by passing in the experiment/test object into the variant JS
+3. Any variant can now reference code within the shared JS through `{{testObject}}.options.js()`
 
-#### Example
+As an example, you should have:
 
 `repo/lib/waves/mytest/shared.js`:
 
 ```js
+function shared()
 {
-    sharedFn: function() {
-        //do something
+    return {
+        sharedFn: function() {
+            //do something
+        },
+        sharedVal: 'something'
+        ...
     }
 }
 ```
@@ -157,7 +155,7 @@ recipes:
   0:
     name: Control
   1:
-    name: Treatment2
+    name: Treatment1
     js: treatment1.js
   2:
     name: Treatment2
@@ -170,7 +168,8 @@ recipes:
 // pass in the 'test' object into the treatment function
 function treatment1(test) {
     // call shared functions using dot notation
-    test.options.js.sharedFn();
+    var sharedObject = test.options.js();
+    sharedObject.sharedFn();
     // ... other transformations
 }
 ```
@@ -181,21 +180,20 @@ function treatment1(test) {
 // pass in the 'test' object into the treatment function
 function treatment2(test) {
     // call shared functions using dot notation
-    test.options.js.sharedFn();
+    var sharedObject = test.options.js();
+    sharedObject.sharedFn();
     // ... other transformations
 }
 ```
 
-### Experiment shared CSS
+#### Experiment shared CSS
 
 Setup instructions:
 
 1. Create a CSS file containing shared CSS in an experiment's directory
 2. In `config.yml`, point the root level `css` key to the file
 
-Shared CSS is injected into the document when the test is activated, regardless of the variant (including "Control").
-
-#### Example
+Shared CSS is injected into the document when the test is activated, regardless of the variant (including the "Control"), so be sure to scope your shared CSS properly.
 
 `repo/lib/waves/mytest/shared.css`:
 
@@ -239,7 +237,19 @@ Parameter key | Values | Description
 `trigger` | `{trigger.js}` | Experiment trigger JS filename.
 `divertTo` | `{recipeId}` | Allows diverting 100% of traffic to a specific variant. Handy when you have found a winner and want to temporarily divert traffic to it.
 
-Full details and explanations of other parameters can be found in [config-template.yml](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config-template.yml).
+Learn more [about the test object keys here](js-delivery-test-object) or review the [`config-template.yml` template on Github](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config-template.yml)
+
+Full details and explanations of other parameters can be found in .
+
+## Why we recommend the YAML format
+
+- **Easiest to read & setup**: YAML abtracts away JS syntax from your experiment configuration
+
+- **Easier to develop experiments**: Separating JS & CSS is good practice; great for debugging & syntax highlighting
+
+- **Automatic variant code minification**: The YAML build path minifies & lints variant code to minimise your container weight
+
+- **Superior code portability**: Send your developers winning variant code for permanent implementation (it's easier to unpack the actual variant code from experiment code)
 
 ## Next steps
 
