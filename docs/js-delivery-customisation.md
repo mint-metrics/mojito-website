@@ -1,7 +1,7 @@
 ---
 id: js-delivery-customisation
 title: Customise your Mojito container shared code & tracking
-sidebar_label: Customisation & tracking
+sidebar_label: Add tools & tracking
 ---
 
 ## Container shared code

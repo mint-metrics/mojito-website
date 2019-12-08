@@ -1,7 +1,7 @@
 ---
 id: js-delivery-upgrading
 title: Upgrade your Mojito split testing container to the latest version
-sidebar_label: Upgrading Mojito
+sidebar_label: Upgrade Mojito
 ---
 
 An open-source split testing tool has real benefits - like being able to choose which updates to install, when. No third-parties will be making unwanted modifications to your site's JS.
