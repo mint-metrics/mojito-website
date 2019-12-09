@@ -18,26 +18,29 @@
           "js-delivery-hosting-snippet"
         ]
       },
-      "js-delivery-upgrading",
-      {
-        "type": "subcategory",
-        "label": "API reference",
-        "ids": [
-          "js-delivery-api-execution-order",
-          "js-delivery-test-object",
-          "js-delivery-api-storage-adapter",
-          "js-delivery-utilities",
-          "js-delivery-gulp-commands"
-        ]
-      }
+      "js-delivery-upgrading"
     ],
     "2. Snowplow Storage": [
-      "snowplow-storage-intro",
+      "snowplow-storage-intro"
+    ],
+    "3. R Analytics": [
+      "r-analytics-intro"
+    ]
+  },
+  "api": {
+    "API reference": ["api-intro"],
+    "1. JS Delivery": [
+      "js-delivery-api-execution-order",
+      "js-delivery-test-object",
+      "js-delivery-api-storage-adapter",
+      "js-delivery-utilities",
+      "js-delivery-gulp-commands"
+    ],
+    "2. Snowplow Storage": [
       "snowplow-storage-events",
       "snowplow-storage-data-models"
     ],
     "3. R Analytics": [
-      "r-analytics-intro"
     ]
   }
 }
