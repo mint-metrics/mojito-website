@@ -37,7 +37,7 @@ class HomeSplash extends React.Component {
 
     const ProjectTitle = () => (
       <h2 className="projectTitle">
-        <small>{siteConfig.title} - {siteConfig.tagline}</small>
+        <small>A professional, open split testing stack for speed &amp; security</small>
       </h2>
     );
 
@@ -63,7 +63,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('home')}>View docs</Button>
+            <Button href={docUrl('home')}>Get started</Button>
             <Button href="https://mintmetrics.io/mojito/introducing-mojito-open-source-self-hosted-experimentation-stack/">Read intro blog post</Button>
           </PromoSection>
         </div>
