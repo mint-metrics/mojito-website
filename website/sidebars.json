@@ -3,8 +3,16 @@
     "Introduction": ["home"],
     "1. JS Delivery": [
       "js-delivery-intro",
-      "js-delivery-setup", 
-      "js-delivery-customisation",
+      {
+        "type": "subcategory",
+        "label": "Experiment setup",
+        "ids": [
+          "js-delivery-setup",
+          "js-delivery-setup-js",
+          "js-delivery-setup-yaml",
+          "js-delivery-setup-shared-parameters"
+        ]
+      },      "js-delivery-customisation",
       "js-delivery-preview-launch",
       {
         "type": "subcategory",

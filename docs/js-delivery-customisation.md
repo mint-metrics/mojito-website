@@ -1,14 +1,12 @@
 ---
 id: js-delivery-customisation
 title: Customise your Mojito container shared code & tracking
-sidebar_label: Add tools & tracking
+sidebar_label: Setup tools & tracking
 ---
 
-## Container shared code
+Shared JS defined in `repo/lib/shared-code.js` can be accessed by any experiment in the container. It's also used to define Mojito's optional parameters, e.g. [Custom storage adaptors](#tracking-data-collection-error-handling), [Debug mode](#debug-mode) and [Exclusion rules](#default-exclusion-rule).
 
-JS defined in `repo/lib/shared-code.js` can be accessed by any experiment in the container. It's also used to define Mojito's optional parameters, e.g. [Custom storage adaptors](#tracking-data-collection-error-handling), [Debug mode](#debug-mode) and [Exclusion rules](#default-exclusion-rule).
-
-### Tracking, data collection & error handling
+## Tracking, data collection & error handling
 
 Mojito provides hooks for 3 key events:
 
@@ -67,9 +65,9 @@ Mojito.options.storageAdapter = {
 
 The whole test object is passed into the `storageAdapter` functions, allowing you to track custom values for your experiment (e.g. Google Optimize tracking, Google Analytics Custom Dimensions and experiment versions). In the example above, we expose  `gaExperimentId` on the root of the test object and we're able to access it via `obj.options.gaExperimentId`.
 
-### Default exclusion rule
+## Default exclusion rule
 
-Let's face it, we need to exclude IE and other ancient browsers from being bucketed. They lack so many features of modern browsers that your experiments are likely to break for these useragents.
+Let's face it - we need to exclude IE and other ancient browsers from being bucketed. They lack so many features of modern browsers that your experiments are likely to break for these useragents. It's also not worth weighing down your experimental code with heavy shims to support old browsers.
 
 To exclude a useragent from being bucketed, you need to set `Mojito.options.excluded` to `true` for those you want excluded. We recommend setting the value from the output of a function, like so:
 
