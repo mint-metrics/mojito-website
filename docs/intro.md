@@ -1,6 +1,7 @@
 ---
 id: home
 title: Mojito framework overview
+sidebar_label: Overview
 ---
 
 <p align="center"><img src="/img/logo.png" alt="Mojito experimentation framework" width="50%"/></p>
