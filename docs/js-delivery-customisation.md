@@ -1,7 +1,7 @@
 ---
 id: js-delivery-customisation
 title: Customise your Mojito container shared code & tracking
-sidebar_label: Setup tools & tracking
+sidebar_label: Add shared tools & tracking
 ---
 
 Shared JS defined in `repo/lib/shared-code.js` can be accessed by any experiment in the container. It's also used to define Mojito's optional parameters, e.g. [Custom storage adaptors](#tracking-data-collection-error-handling), [Debug mode](#debug-mode) and [Exclusion rules](#default-exclusion-rule).

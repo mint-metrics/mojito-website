@@ -128,7 +128,7 @@ Parameter key | Values | Description
 `trigger` | `{trigger.js}` | Experiment trigger JS filename.
 `divertTo` | `{recipeId}` | Allows diverting 100% of traffic to a specific variant. Handy when you have found a winner and want to temporarily divert traffic to it.
 
-Learn more [about the test object keys here](js-delivery-test-object) or review the [`config-template.yml` template on Github](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config-template.yml)
+Learn more [about the test object keys here](js-delivery-test-object.md) or review the [`config-template.yml` template on Github](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config-template.yml)
 
 ## Next steps
 

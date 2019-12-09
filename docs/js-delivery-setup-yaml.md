@@ -1,7 +1,7 @@
 ---
 id: js-delivery-setup-yaml
 title: Setting up experiments with the YAML method
-sidebar_label: YAML experiment setup
+sidebar_label: 2. YAML setup method
 ---
 
 To setup our example experiment, start by defining it on the command line:

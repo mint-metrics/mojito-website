@@ -1,7 +1,7 @@
 ---
 id: js-delivery-setup-js
 title: Setting up experiments with the JS method
-sidebar_label: JS experiment setup
+sidebar_label: 1. JS setup method
 ---
 
 Get started by creating a file in your repository: 

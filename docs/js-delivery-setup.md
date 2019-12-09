@@ -1,7 +1,7 @@
 ---
 id: js-delivery-setup
 title: Setting up experiments with Mojito JS Delivery
-sidebar_label: Supported methods
+sidebar_label: Two supported methods
 ---
 
 There are two approaches to setup experiments in Mojito. The **gulp** builder supports both methods when building the JS container.
