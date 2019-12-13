@@ -61,13 +61,13 @@ Follow [Amazon's AWS CLI installation & setup guide](https://docs.aws.amazon.com
 Now you can publish straight from your IDE:
 
 ```bash
-gulp scripts && gulp publish
+gulp build && gulp publish
 ```
 
 And if your user has access to production, they can push to your configured production environment through the `--production` flag:
 
 ```bash
-gulp scripts && gulp publish --production
+gulp build && gulp publish --production
 ```
 
 ## Repeat this step for other users

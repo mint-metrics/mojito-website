@@ -302,7 +302,7 @@ class Index extends React.Component {
 <span class="comment">gulp set --live w1</span><br />\
 <br />\
 <span class="comment"># Build your container into dist/mojito.js</span><br />\
-<span class="comment">gulp scripts</span>\
+<span class="comment">gulp build</span>\
 </code></pre>',
           },
         ]}
