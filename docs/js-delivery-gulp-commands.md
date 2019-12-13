@@ -62,7 +62,7 @@ Excluded from test by Mojito.options.excluded value.
 [14:58:44] Finished 'test' after 4.05 s
 ```
 
-## gulp build (previously `gulp scripts`)
+## gulp build (previously 'gulp scripts')
 
 The `build` command builds the Mojito container using all the available tests inside `lib/waves/*`. Any JS test objects named `test-object.js` or YML test definitions that are not `inactive` state will be parsed and added to the container in ascending order.
 
