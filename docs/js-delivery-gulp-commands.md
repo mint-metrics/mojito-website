@@ -62,15 +62,16 @@ Excluded from test by Mojito.options.excluded value.
 [14:58:44] Finished 'test' after 4.05 s
 ```
 
-## gulp scripts
+## gulp build (previously 'gulp scripts')
 
-`scripts` builds the Mojito container using all the available tests inside `lib/waves/*`. Any JS test objects named `test-object.js` or YML test definitions that are not `inactive` state will be parsed and added to the container in ascending order.
+The `build` command builds the Mojito container using all the available tests inside `lib/waves/*`. Any JS test objects named `test-object.js` or YML test definitions that are not `inactive` state will be parsed and added to the container in ascending order.
 
 The output of this script will save your mojito container into both minified and unminified files under `dist/{{scriptname}}.js` and `dist/{{scriptname}}.pretty.js`, where `{{scriptname}}` is the configured name you used in your repository's `config.js` `containerName` variable.
 
 ### Commands
 
- - `gulp scripts` or `gulp` (default task)
+ - `gulp build` or `gulp` (default task)
+ - `gulp scripts` (deprecated)
 
 
 Flags | Description
@@ -79,13 +80,13 @@ N/A | &nbsp;
 
 ### Example: Build a new test into your container
 
-Imagine you've just created a new experiment (Wave ID: `w2`) and you want to build it into your Mojito container. Running `gulp scripts` will build the container and provide a summary of the experiments inside it.
+Imagine you've just created a new experiment (Wave ID: `w2`) and you want to build it into your Mojito container. Running `gulp build` will build the container and provide a summary of the experiments inside it.
 
 ```shell
-$ gulp scripts
+$ gulp build
 [15:16:04] Using gulpfile ~/Documents/mojito-js-delivery/gulpfile.js
-[15:16:04] Starting 'scripts'...
-[15:16:05] Finished 'scripts' after 699 ms
+[15:16:04] Starting 'build'...
+[15:16:05] Finished 'build' after 699 ms
 Mojito container built with 2 tests (4.78 KB):
   Live (1) - aa1
   Staging (1) - w2
@@ -127,7 +128,7 @@ $ gulp set --live aa1 --traffic 0.1
 Test aa1 has been changed to live successfully.
 ```
 
-Then, when you next run `gulp scripts`, and build your container, your `aa1` test will readily bucket users into the test.
+Then, when you next run `gulp build`, and build your container, your `aa1` test will readily bucket users into the test.
 
 ### Example: Divert all traffic to a particular recipe
 
@@ -159,7 +160,7 @@ $ gulp set --inactive w1
 Test w1 has been changed to inactive successfully.
 ```
 
-And when you next run `gulp scripts`, your `w1` test object will no longer show up in your container, freeing up space inside your container.
+And when you next run `gulp build`, your `w1` test object will no longer show up in your container, freeing up space inside your container.
 
 
 ## gulp new
@@ -198,7 +199,7 @@ To launch this, you can then just run:
 
 ```shell
 gulp set --live aa1
-gulp scripts && gulp publish
+gulp build && gulp publish
 ```
 
 Easy, right?
@@ -224,7 +225,7 @@ Flags | Description
 
 You're building an experiment and you want to check it's working properly in your staging container before you roll it out to production.
 
-Assuming you've built your container with `gulp scripts`, you can go ahead and use `gulp publish` to upload it to S3:
+Assuming you've built your container with `gulp build`, you can go ahead and use `gulp publish` to upload it to S3:
 
 ```shell
 $ gulp publish

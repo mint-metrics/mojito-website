@@ -90,7 +90,7 @@ For users assigned to the "Variant" group, we execute **a)** ```variant.js``` an
 Run the Gulp pipeline to lint/test/publish your container.
 
 1. Install the necessary NPM packages: ```npm install```
-2. Build & publish your testing container: ```gulp scripts-local && gulp publish```
+2. Build & publish your testing container: ```gulp build && gulp publish```
 
 ## Example analytics reports
 
