@@ -16,7 +16,7 @@ It gives you unprecedented control over how subjects are assigned.
 
 ## Mojito.options.decisionAdapter
 
-When subjects are bucketed and assigned a recipe ([see `Assign subject by sample rate` on the execution flowchart](js-delivery-api-execution-order#split-test-object-execution-flowchart)), the decisionAdapter is called. This can happen up to three times per experiment ([as described below](#expect-to-handle-multiple-decisions-per-test)).
+The `decisionAdapter` is called when subjects are bucketed and assigned a recipe ([see `Assign subject by sample rate` on the execution flowchart](js-delivery-api-execution-order#split-test-object-execution-flowchart)). This can happen up to three times per experiment ([as described below](#expect-to-handle-multiple-decisions-per-test)).
 
 ### Syntax
 
@@ -47,7 +47,7 @@ Mojito.options.decisionAdapter = function (test)
 };
 ```
 
-It must return a value between 0 and 1. E.g. Consider an experiment with a 50-50 split between `Control` and `Treatment` groups - if the decision adapter returns a value of `0.314...`, then the user would be assigned the `Control`. Whereas a value of `0.694...` would bucket them into the `Treatment` group.
+It must return a value between 0 and 1. E.g. Consider an experiment with a 50-50 split between `Control` and `Treatment` groups - if the decision adapter returns a value of `0.3`, then the user would be assigned the `Control`. Whereas a value of `0.7` would bucket them into the `Treatment` group.
 
 ## Expect to handle multiple decisions per test
 
