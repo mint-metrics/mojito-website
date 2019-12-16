@@ -99,12 +99,15 @@ For performance reasons, it can be useful to save the output of expensive funtio
 Mojito.options.decisionAdapter = function (test)
 {
     // Check for an existing seed, else create a new one
-    if (!test.options.seed) var seed = md5(userdId + test.options.id); 
+    var seed = test.options.seed;
+    if (!seed)
+    {
+        seed  = md5(userdId + test.options.id);
+        // Store the seed in the test object for later use
+        test.options.seed = seed;
+    }
 
-    // Store the seed in the test object for later use
-    test.options.seed = seed;
-
-    // Return the 
+    // Return the decision
     return seededRandom(seed, test.options.decisionIdx);
 };
 ```
