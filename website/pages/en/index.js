@@ -255,7 +255,7 @@ class Index extends React.Component {
             content: 'Keep your site fast with a split testing library that\'s an order of magnitude smaller than SaaS solutions',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'bottom',
-            title: 'Front-end library >5kb gzipped & minified',
+            title: 'Front-end library <5kb gzipped & minified',
           },
           {
             content: 'Protect your users & applications from bugs with gradual ramp-up, error tracking & error handling',
