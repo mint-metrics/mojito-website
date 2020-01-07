@@ -39,9 +39,9 @@ We recommend delaying activation until the page is ready to be transformed, by u
 
  - [`Mojito.utils.domReady()`](js-delivery-utilities#mojitoutilsdomready)
  - [`Mojito.utils.waitForElement()`](js-delivery-utilities#mojitoutilswaitforelement)
- - [`Mojito.utils.waitUntil()`](/js-delivery-utilities#mojitoutilswaituntil)
+ - [`Mojito.utils.waitUntil()`](js-delivery-utilities#mojitoutilswaituntil)
 
-See [more utilities here](/js-delivery-utilities)
+See [more utilities here](js-delivery-utilities)
 
 
 ## Order of experiments inside your container
