@@ -15,7 +15,7 @@ This component allows you to create fully-templateable experiment reports for Mo
  - Measure tests against a series of configurable metrics
  - Measure changes in time to convert
  - Goal counts / conversion depth reports for measuring frequency / user loyalty (e.g. user transacted 2 or more times)
- - Diagnostic functions check for [assignment problems (SRM test)](https://twitter.com/ronnyk/status/932798952679776256?lang=en) and [experiment errors](https://mintmetrics.io/experiments/why-you-need-error-tracking-handling-in-your-split-tests/)
+ - Diagnostics to check for [SRM issues](https://lukasvermeer.nl/srm/docs/faq/#what-is-sample-ratio-mismatch) and [variant code errors](https://mintmetrics.io/experiments/why-you-need-error-tracking-handling-in-your-split-tests/)
 
 ## Prerequisites
 
