@@ -14,9 +14,27 @@ Whenever you make changes to experiments in Mojito, you need to build/publish yo
 
 ## Previewing experiments
 
-Previewing experiments is accomplished by using URL parameters to force specific variants to render. 
+You can force  either our Chrome Extension or manually through URL parameters.
 
-### Syntax
+### 1. Mojito Chrome Inspector
+
+![Mojito Chrome Extension for preview mode](/img/js-delivery/chrome-preview-tool.png)
+
+The extension works in the background to detect Mojito and any experiments on the page. It was designed with performance in mind and to keep tucked out of the way, in Developer tools. 
+
+The extension lets you:
+
+ - Detect your Mojito container running on the page
+ - See all the available tests in a container & if they're running
+ - Preview (force-view) recipes for a test
+
+#### Add it to Chrome
+
+[![Add to Chrome](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/mojito-chrome-inspector/pogeofjajfmbkkbkpddgjfnadkajidpl)
+
+### 2. Force URL parameters
+
+To preview a variant of an experiment, you can force it by URL query parameters:
 
 `mojito_{id}={variant_id}`
 
@@ -25,7 +43,7 @@ Token | &nbsp;
 `{id}` | Experiment id to be previewed
 `{variant_id}` | Recipe/variant id to render
 
-### Example
+#### Example
 
 `https://mywebsite.com/?mojito_ex2=1`
 
