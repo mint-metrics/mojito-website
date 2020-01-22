@@ -78,8 +78,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/android-icon-192x192.png',
-  footerIcon: 'img/android-icon-192x192.png',
+  headerIcon: 'img/dark.svg',
+  footerIcon: 'img/dark.svg',
   favicon: 'img/android-icon-192x192.png',
 
   /* Colors for website */
