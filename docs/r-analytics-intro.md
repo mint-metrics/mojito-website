@@ -46,11 +46,16 @@ As an example, your reports directory may resemble:
 
 ```R
 # Used for generating the reports
-install.packages(c("ggplot2", "scales", "reshape", "ztable", "dplyr"))
+install.packages(c("ggplot2", "scales", "reshape", "ztable", "dplyr", "jsonlite"))
 
 # Used for connecting to Redshift via RJDBC
 install.packages("RJDBC")
 ```
+
+**3. Install `pngquant` for image compression (recommended due to the large uncompressed images outputted by `ggplot2` and `knitr`)**
+
+See the [pngquant website for instructions](https://pngquant.org/).
+
 
 ## Create a test report from the knitr template
 
