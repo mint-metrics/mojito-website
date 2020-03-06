@@ -10,7 +10,7 @@ The ```Mojito JS Delivery``` component is a lightweight (&lt;5kb) JS framework f
 
 ## Prerequisites
 
-- Make sure you have [Node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/) installed
+- Make sure you have [Node](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/) and [Gulp CLI](https://gulpjs.com/) installed
 
 ## Getting setup
 
