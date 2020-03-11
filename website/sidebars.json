@@ -35,6 +35,14 @@
       "r-analytics-intro"
     ]
   },
+  "examples": {
+    "Examples & tutorials": ["example-home"],
+    "1. JS Delivery": [
+      "example-js-delivery-simple-ab",
+      "example-js-delivery-aa",
+      "example-js-delivery-requestly-staging"
+    ]
+  },
   "api": {
     "API reference": ["api-intro"],
     "1. JS Delivery": [

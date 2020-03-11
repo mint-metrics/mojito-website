@@ -68,8 +68,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'home', label: 'Get started'},
+    {doc: 'example-home', label: 'Examples'},
     {doc: 'api-intro', label: 'API reference'},
-    {href: 'https://mintmetrics.io/contact/', label: 'Help'},
     {href: 'https://www.github.com/mint-metrics/mojito', label: 'Github'},
     {search: true},
   ],
