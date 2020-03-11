@@ -7,7 +7,7 @@ sidebar_label: 2. YAML setup method
 To setup our example experiment, start by defining it on the command line:
 
 ```sh
-gulp new -ab ex1
+gulp new -ab ex2
 ```
 
 This will create a scaffold of your experiment under `repo/lib/waves/ex2/config.yml`. Now you can configure the test parameters in YAML:
@@ -15,7 +15,7 @@ This will create a scaffold of your experiment under `repo/lib/waves/ex2/config.
 ```yml
 state: live
 sampleRate: 1
-id: ex1
+id: ex2
 name: Google message straight JS
 recipes:
   '0':
@@ -52,7 +52,7 @@ function treatment(){
 Your experiment directory should look like:
 
 ```
-ex1/
+ex2/
   |-- 1.js
   |-- config.yml
   |-- trigger.js
