@@ -63,7 +63,7 @@ recipes:
 trigger: trigger.js
 ```
 
-## 5. Launch the test & publish your container
+## 3. Launch the test & publish your container
 
 You've created an AA test, now let's send it live and publish it to your site:
 

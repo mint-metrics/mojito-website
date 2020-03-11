@@ -107,9 +107,8 @@ function trigger(test) {
 }
 ```
 
-Even better, we can activate the experiment as soon as the background element is ready in the DOM. Simple replace `Mojito.utils.domReady` with `Mojito.utils.waitForElement`:
+Even better, we can activate the experiment as soon as the background element is ready in the DOM. Simple replace `Mojito.utils.domReady` with `Mojito.utils.waitForElement`, so we can wait until `div.hp_body` is available:
 
-div.hp_body
 ```js
 // A better way to activate
 function trigger(test) {
@@ -133,13 +132,15 @@ gulp publish
 
 ### Preview your experiment
 
-Browse to [www.bing.com](https://www.bing.com/). 
+> **NB**: You must have Mojito installed on the page or [use a Chrome Extension like Requestly to inject Mojito](example-js-delivery-requestly-staging) into the page for testing.
 
-Using the [Mojito Chrome Inspector](https://chrome.google.com/webstore/detail/mojito-chrome-inspector/pogeofjajfmbkkbkpddgjfnadkajidpl), open dev tools, browse to the `Mojito` tab and force your new experiment to the treatment.
+1. Browse to [www.bing.com](https://www.bing.com/). 
+
+2. Using the [Mojito Chrome Inspector](https://chrome.google.com/webstore/detail/mojito-chrome-inspector/pogeofjajfmbkkbkpddgjfnadkajidpl), open dev tools, browse to the `Mojito` tab and force your new experiment to the treatment.
 
 ![Preview your split test variant in Mojito Chrome Inspector](/img/examples/js-delivery-simple-ab-preview.png)
 
-When you refresh the page, your treatment will be enabled.
+3. Refresh the page, your treatment will be enabled.
 
 ## 6. Launch your experiment
 
