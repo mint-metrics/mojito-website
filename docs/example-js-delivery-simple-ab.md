@@ -8,7 +8,7 @@ Let's imagine we're working for Bing and we want to test showing no image on the
 
 > **Pre-requisites** 
 > 1) You've [cloned Mojito JS Delivery locally](https://github.com/mint-metrics/mojito-js-delivery), with npm, Node and Gulp installed. 
-> 2) You've setup [tracking through your storageAdapter, or used our example one](js-delivery-api-storage-adapter#example-storage-adapter-test-object-override).
+> 2) You've setup [tracking through your storageAdapter, or used our example one](/docs/js-delivery-api-storage-adapter#example-storage-adapter--test-object-override).
 
 ## Experiment parameters
 
