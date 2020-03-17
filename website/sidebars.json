@@ -40,7 +40,9 @@
     "1. JS Delivery": [
       "example-js-delivery-simple-ab",
       "example-js-delivery-aa",
-      "example-js-delivery-requestly-staging"
+      "example-js-delivery-requestly-staging",
+      "example-js-delivery-divert",
+      "example-js-delivery-cross-trigger"
     ]
   },
   "api": {
