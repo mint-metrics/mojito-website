@@ -4,15 +4,15 @@ title: Protect split tests from spillover when restarting & ramping up
 sidebar_label: Restart/Ramp-up spillover protection
 ---
 
-Ramping-up experiments (or performing canary releases) is a popular way of managing risks and bugs in experimentation before exposing all your traffic. A typical ramp-up process looks like this:
+Ramping-up experiments (from limited canary releases) is a popular way of managing risks and bugs in experiments before exposing all your traffic. A typical ramp-up process looks like this:
 
 1. Launch an experiment to 10% of traffic
-2. Check guardrail metrics & for any errors from your experiment
-3. If everything looks good, you may either:
+2. Check your guard rail metrics & for any errors from your experiment
+3. If everything looks good, you can usually:
    - `A`) Ramp-up the existing experiment to 100% traffic without re-assigning users
    - `B`) Restart & re-assign users in the experiment at 100% traffic
 
-Choosing option `A`, and ramping from 10%->100%, can [impact your split test results through Simpson's Paradox (see Section #6)](http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf). Meanwhile option `B` - restarting the experiment and re-assigning subjects - can cause spillover where users in the `Control` group are exposed to the intervention in the `Treatment` group and vice versa. This dilutes the results of your experiment and mutes any effect you hope to measure.
+Choosing option `A`, and ramping from 10%->100%, can [impact your split test results through Simpson's Paradox (see Section #6)](http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf). Meanwhile option `B` - restarting the experiment and re-assigning subjects - can cause spillover where users in the `Control` group are exposed to the intervention in the `Treatment` group and vice versa. Option `B` dilutes the results of your experiment and can mute the effect you hope to measure.
 
 Restarting without acknowledging the prior run, means you'll treat all users as part of the same population to draw from:
 
@@ -29,7 +29,7 @@ Users from the initial 10% run *will* be randomly assigned to your new 100% run,
 In this case, none of the users in the 10% run will be included within the 100% ramp.
 
 > **Prerequisites**:
-> You understand [how hash-based user assignment in split tests](example-hash-function-split-test-assignment) work.
+> You roughly understand [how hash-based user assignment in split tests](example-hash-function-split-test-assignment) work.
 
 ### 1. Before the experiment
 
@@ -55,8 +55,8 @@ Mojito.options.decisionAdapter = function (test) {
 
     // Ramp-up spillover protection - By Lukas Vermeer https://lukasvermeer.nl/
     // Exclude users below a test's excludeSampleRate threshold to avoid spillover after ramp-up/restart
-    if (test.options.decisionIdx === 1 && test.options.excludeSampleRate && decision < test.options.excludeSampleRate) {
-        return -1;
+    if (test.options.decisionIdx === 0 && test.options.excludeSampleRate && decision < test.options.excludeSampleRate) {
+        return 2;
     }
 
     return decision;
@@ -74,7 +74,6 @@ Your experiment YAML might resemble this:
 
 ```yml
 state: live
-sampleRate: 0.1
 id: ex3
 name: Homepage button
 recipes:
@@ -84,8 +83,15 @@ recipes:
     name: Treatment
     css: 1.css
 trigger: trigger.js
+
+# 1. Canary release parameters: 10% sample rate, disable cookies
+sampleRate: 0.1
 options:
-   cookieDuration: -1
+  cookieDuration: -1
+
+# 2. Ramp-up parameters: 100% sample rate, initial 10% excluded, cookies re-enabled (optional)
+#sampleRate: 1
+#excludeSampleRate: 0.1
 ```
 
 ### 3. 100% ramp-up
@@ -98,8 +104,6 @@ When it comes time to ramp up, you'll need to:
 
 ```yml
 state: live
-sampleRate: 1
-excludeSampleRate: 0.1
 id: ex3
 name: Homepage button
 recipes:
@@ -109,6 +113,15 @@ recipes:
     name: Treatment
     css: 1.css
 trigger: trigger.js
+
+# 1. Canary release parameters: 10% sample rate, disable cookies
+#sampleRate: 0.1
+#options:
+#  cookieDuration: -1
+
+# 2. Ramp-up parameters: 100% sample rate, initial 10% excluded, cookies re-enabled (optional)
+sampleRate: 1
+excludeSampleRate: 0.1
 ```
 
 ## Wrapping up
