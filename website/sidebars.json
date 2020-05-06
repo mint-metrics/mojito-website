@@ -42,7 +42,11 @@
       "example-js-delivery-aa",
       "example-js-delivery-requestly-staging",
       "example-js-delivery-divert",
-      "example-js-delivery-cross-trigger"
+      "example-js-delivery-cross-trigger",
+      "example-js-delivery-spillover-protection"
+    ],
+    "Other / advanced": [
+      "example-hash-function-split-test-assignment"
     ]
   },
   "api": {
