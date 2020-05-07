@@ -13,6 +13,8 @@ Hash-based user assignment brings experimenters many benefits in running split t
 
 ![Hash-based assignment lets you reliably assign a user to the same treatment across platforms](/img/examples/hash-based-assignment-outcome.png)
 
+As long as you have a consistent user ID across platforms, users will be bucketed the same way everywhere.
+
 You'll be amazed how simple this is.
 
 ## How it works
