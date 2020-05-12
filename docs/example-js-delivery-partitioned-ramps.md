@@ -1,7 +1,7 @@
 ---
-id: example-js-delivery-spillover-protection
-title: Protect split tests from spillover when restarting & ramping up
-sidebar_label: Restart/Ramp-up spillover protection
+id: example-js-delivery-partitioned-ramps
+title: Containing ramp spillover with partitioned ramps & hash based splits
+sidebar_label: Partitioned ramps & spillover protection
 ---
 
 Ramping-up experiments (from limited canary releases) is a popular way of managing risks and bugs in experiments before exposing all your traffic. A typical ramp-up process looks like this:
@@ -20,7 +20,7 @@ Restarting without acknowledging the prior run, means you'll treat all users as 
 
 Users from the initial 10% run *will* be randomly assigned to your new 100% run, but those users who swapped variants between runs may dilute your results. It's important because the 10% of users who get reassigned skew toward your most loyal, frequent users.
 
-## Option: `C` Vermeer spillover protection
+## Option: `C` Partitioned ramps
 
 [Lukas Vermeer, director of Experimentation at Booking.com](https://www.lukasvermeer.nl/) advocates a third and perhaps superior way to ramp experiments. Users assigned during the initial 10% run, can be excluded during the ramped-up run. It only costs a small amount of statistical power.
 
@@ -53,8 +53,8 @@ Mojito.options.decisionAdapter = function (test) {
         digest = test.options.digest,
         decision = parseInt(digest.substring(startPos, endPos), 16) / 0xFFFFFFFF;
 
-    // Ramp-up spillover protection - By Lukas Vermeer https://lukasvermeer.nl/
-    // Exclude users below a test's excludeSampleRate threshold to avoid spillover after ramp-up/restart
+    // Partitioned ramps - By Lukas Vermeer https://lukasvermeer.nl/
+    // Exclude users below a test's excludeSampleRate threshold to avoid spillover between ramps
     if (test.options.decisionIdx === 0 && test.options.excludeSampleRate && decision < test.options.excludeSampleRate) {
         return 2;
     }
@@ -126,6 +126,6 @@ excludeSampleRate: 0.1
 
 ## Wrapping up
 
-Those are some options for managing split test spillover during ramp-up. Each have their trade-offs, and in an ideal world, you would launch every experiment to 100% of traffic - and use Real-time data to decide whether to pull them or not.
+Those are some options for managing split test ramping. Each have their trade-offs, and in an ideal world, you would launch every experiment to 100% of traffic - and use Real-time data to decide whether to pull them or not.
 
 Short of living in an ideal world, you have Mojito, which provides you with the control you need to manage your assignment around these risks.

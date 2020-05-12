@@ -8,7 +8,7 @@ Hash-based user assignment brings experimenters many benefits in running split t
 
 * Consistent assignment across devices & platforms
 * Retroactively "track" users assigned/excluded but not tracked
-* Exclude users who may have been exposed during your canary release (aka. [spillover protection](example-js-delivery-spillover-protection))
+* Exclude users who may have been exposed during your canary release (aka. [partitioned ramps](example-js-delivery-partitioned-ramps))
 * The ability to "back-test" your assignment before launching (e.g. see which treatment groups the last 30 days' users would have seen)
 
 ![Hash-based assignment lets you reliably assign a user to the same treatment across platforms](/img/examples/hash-based-assignment-outcome.png)
