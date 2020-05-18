@@ -18,7 +18,7 @@ It is comprised of 3 core modules that can be used independently of each other o
 
 ## Features
 
-- Under 5kb minified & gzipped
+- Under 6kb minified & gzipped
 - Define experiments with simple JS or YAML
 - Self-hosted & git-controlled for familiar code review / merging
 - Expressive trigger system & utilities
@@ -32,7 +32,7 @@ Differentiating features between popular vendors' tools and Mojito out of the bo
 Feature | Optimizely X | Google Optimize | Mojito
 --- | --- | --- | ---
 Open-source license | ❌ | ❌ | ✅ BSD3
-Light front-end codebase * | ❌~80kb | ❗~25kb | ✅<5kb
+Light front-end codebase | ❌~80kb * | ❗~25kb * | ✅<6kb ^
 Git source control & CI | ❌ | ❌ | ✅
 Variant error-tracking/handling | ❌ | ❌ | ✅
 Auto CSS/JS minification | ❗([not custom code](https://community.optimizely.com/t5/Using-Optimizely/Minified-version-of-Optimizely-X-snippet/m-p/21411#M8655)) | ❓ | ✅
@@ -43,6 +43,7 @@ Server-side/App testing | ✅ | ❗(via API) | ❗(via **Storage**)
 WYSIWYG test editor | ✅ | ✅ | ❌
 
 \* Tested 2019-07-05
+^ Tested 2020-05-18
 
 ## Getting started
 
