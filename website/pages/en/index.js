@@ -198,7 +198,7 @@ class Index extends React.Component {
           {
             content:
               'Switching to Mojito from a SaaS tool can reduce page load times because it\'s an order of magnitude lighter and can be served from your own domain. * Tested 2019-05-07',
-            title: 'Improve your page speed with a small <6kb library',
+            title: 'Improve your page speed with a small ~5.5kb library',
           },
           {
             image: `${baseUrl}img/speedtest.png`,
@@ -255,7 +255,7 @@ class Index extends React.Component {
             content: 'Keep your site fast with a split testing library that\'s an order of magnitude smaller than SaaS solutions',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'bottom',
-            title: 'Front-end library <6kb gzipped & minified',
+            title: 'Front-end library ~5.5kb gzipped & minified',
           },
           {
             content: 'Protect your users & applications from bugs with gradual ramp-up, error tracking & error handling',
