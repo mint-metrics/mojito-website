@@ -49,7 +49,7 @@ recipes:
 trigger: trigger.js
 ```
 
-This will translate to the following JS:
+This will translate to the following JS (notice how "private" is missing from the test object below?):
 
 ```js
 Mojito.addTest({
