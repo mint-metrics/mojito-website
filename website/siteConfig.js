@@ -70,6 +70,7 @@ const siteConfig = {
     {doc: 'home', label: 'Get started'},
     {doc: 'example-home', label: 'Examples'},
     {doc: 'api-intro', label: 'API reference'},
+    {blog: true, label: 'Blog'},
     {href: 'https://www.github.com/mint-metrics/mojito', label: 'Github'},
     {search: true},
   ],
