@@ -8,7 +8,7 @@ sidebar_label: Preview & launch a test
 
 Whenever you make changes to experiments in Mojito, you need to build/publish your container.
 
-1. (Optional) Customise your Mojito container name in [`repo/config.js`](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config.js)
+1. (Optional) Customise your Mojito container name in [`repo/config.js`](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config.example.js)
 2. If you haven't done so already, install the necessary NPM packages: ```npm install```
 3. Build your Mojito container: ```gulp build```
 

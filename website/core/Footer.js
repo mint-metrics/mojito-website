@@ -37,16 +37,16 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('home', this.props.language)}>
+            <a href={this.docUrl('home')}>
               Overview of Mojito
             </a>
-            <a href={this.docUrl('js-delivery-intro', this.props.language)}>
+            <a href={this.docUrl('js-delivery-intro')}>
               Mojito JS library
             </a>
-            <a href={this.docUrl('snowplow-storage-intro', this.props.language)}>
+            <a href={this.docUrl('snowplow-storage-intro')}>
               Mojito Storage docs
             </a>
-            <a href={this.docUrl('r-analytics-intro', this.props.language)}>
+            <a href={this.docUrl('r-analytics-intro')}>
               Mojito Analytics docs
             </a>
           </div>
