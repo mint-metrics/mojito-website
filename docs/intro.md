@@ -35,7 +35,7 @@ Open-source license | ❌ | ❌ | ✅ BSD3
 Light front-end codebase | ❌~80kb* | ❗~25kb* | ✅~5.5kb^
 Git source control & CI | ❌ | ❌ | ✅
 Variant error-tracking/handling | ❌ | ❌ | ✅
-Auto CSS/JS minification | ❗([not custom code](https://community.optimizely.com/t5/Using-Optimizely/Minified-version-of-Optimizely-X-snippet/m-p/21411#M8655)) | ❓ | ✅
+Auto CSS/JS minification | ❗([not custom code](https://help.optimizely.com/Set_Up_Optimizely/Best_practices_for_site_performance_with_Optimizely#Use_custom_code_and_extensions_to_deliver_substantial_changes_within_Optimizely)) | ❓ | ✅
 Self-hosted | ❗ (for a fee) | ❗(via API) | ✅
 Data ownership | ❗(via S3 export) | ❗(via 360/BigQuery) | ✅
 Retroactively add new metrics | ✅ | ❗(360 only) | ✅
