@@ -24,13 +24,16 @@ The extension works in the background to detect Mojito and any experiments on th
 
 The extension lets you:
 
+ - New: Dark mode support
  - Detect your Mojito container running on the page
  - See all the available tests in a container & if they're running
  - Preview (force-view) recipes for a test
 
 #### Add it to Chrome
 
-[![Add to Chrome](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/mojito-chrome-inspector/pogeofjajfmbkkbkpddgjfnadkajidpl)
+[Visit the Chrome Web Store to install](https://chrome.google.com/webstore/detail/mojito-chrome-inspector/pogeofjajfmbkkbkpddgjfnadkajidpl) the official extension.
+
+[![Add to Chrome](/img/js-delivery/chrome-web-store.png)](https://chrome.google.com/webstore/detail/mojito-chrome-inspector/pogeofjajfmbkkbkpddgjfnadkajidpl)
 
 ### 2. Force URL parameters
 
