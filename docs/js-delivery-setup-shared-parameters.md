@@ -4,7 +4,7 @@ title: Experiment shared code & other test parameters
 sidebar_label: Parameters & shared code
 ---
 
-Your JS and CSS can have a shared scope within an experiment. E.g. two treatment variants might have some stying commonalities. We can reduce repeated code by sharing common elements across variants.
+Your JS and CSS can have a shared scope within an experiment. E.g. two treatment variants might have some styling commonalities. We can reduce repeated code by sharing common elements across variants.
 
 In the examples below, we'll use the [YAML method](js-delivery-setup-yaml.md). However the same keys and methods will work for the [JS method](js-delivery-setup-js.md).
 
