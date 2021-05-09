@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-customisation",
+  "id": "js-delivery-customisation",
+  "isDocsHomePage": false,
+  "title": "Customise your Mojito container shared code & tracking",
+  "description": "Shared JS defined in repo/lib/shared-code.js can be accessed by any experiment in the container. It's also used to define Mojito's optional parameters, e.g. Custom storage adaptors, Debug mode and Exclusion rules.",
+  "source": "@site/docs/js-delivery-customisation.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-customisation",
+  "permalink": "/docs/js-delivery-customisation",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-customisation.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Add shared tools & tracking",
+  "frontMatter": {
+    "id": "js-delivery-customisation",
+    "title": "Customise your Mojito container shared code & tracking",
+    "sidebar_label": "Add shared tools & tracking"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Experiment shared code & other test parameters",
+    "permalink": "/docs/js-delivery-setup-shared-parameters"
+  },
+  "next": {
+    "title": "Previewing & launching experiments with Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-preview-launch"
+  }
+}

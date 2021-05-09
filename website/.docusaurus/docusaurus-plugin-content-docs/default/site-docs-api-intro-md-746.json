@@ -1,0 +1,25 @@
+{
+  "unversionedId": "api-intro",
+  "id": "api-intro",
+  "isDocsHomePage": false,
+  "title": "Mojito libraries API references",
+  "description": "This section is intended as an API reference for each of the Mojito components:",
+  "source": "@site/docs/api-intro.md",
+  "sourceDirName": ".",
+  "slug": "/api-intro",
+  "permalink": "/docs/api-intro",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/api-intro.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "api-intro",
+    "title": "Mojito libraries API references"
+  },
+  "sidebar": "api",
+  "next": {
+    "title": "Mojito test activation conditions & order of execution",
+    "permalink": "/docs/js-delivery-api-execution-order"
+  }
+}

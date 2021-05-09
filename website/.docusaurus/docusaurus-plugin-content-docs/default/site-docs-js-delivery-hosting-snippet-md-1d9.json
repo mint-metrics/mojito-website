@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-hosting-snippet",
+  "id": "js-delivery-hosting-snippet",
+  "isDocsHomePage": false,
+  "title": "5. Install your Mojito JS snippet",
+  "description": "We typically install Mojito JS synchronously in the head of all pages with a script tag:",
+  "source": "@site/docs/js-delivery-hosting-snippet.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-hosting-snippet",
+  "permalink": "/docs/js-delivery-hosting-snippet",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-hosting-snippet.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "5. Snippet installation",
+  "frontMatter": {
+    "id": "js-delivery-hosting-snippet",
+    "title": "5. Install your Mojito JS snippet",
+    "sidebar_label": "5. Snippet installation"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "4. Set up Bitbucket Pipelines CI",
+    "permalink": "/docs/js-delivery-hosting-bitbucket"
+  },
+  "next": {
+    "title": "Upgrade your Mojito split testing container to the latest version",
+    "permalink": "/docs/js-delivery-upgrading"
+  }
+}

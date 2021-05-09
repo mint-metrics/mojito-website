@@ -1,0 +1,31 @@
+{
+  "unversionedId": "example-js-delivery-simple-ab",
+  "id": "example-js-delivery-simple-ab",
+  "isDocsHomePage": false,
+  "title": "Build a simple A/B test in Mojito",
+  "description": "Let's imagine we're working for Bing and we want to test showing no image on the homepage to 50% of users. What's needed is a simple A/B test.",
+  "source": "@site/../docs/example-js-delivery-simple-ab.md",
+  "sourceDirName": ".",
+  "slug": "/example-js-delivery-simple-ab",
+  "permalink": "/docs/example-js-delivery-simple-ab",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/example-js-delivery-simple-ab.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "A simple A/B test",
+  "frontMatter": {
+    "id": "example-js-delivery-simple-ab",
+    "title": "Build a simple A/B test in Mojito",
+    "sidebar_label": "A simple A/B test"
+  },
+  "sidebar": "examples",
+  "previous": {
+    "title": "Example experiments, reports & recipes to get started",
+    "permalink": "/docs/example-home"
+  },
+  "next": {
+    "title": "Run an AA test in Mojito",
+    "permalink": "/docs/example-js-delivery-aa"
+  }
+}

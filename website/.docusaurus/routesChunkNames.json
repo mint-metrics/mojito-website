@@ -1,0 +1,202 @@
+{
+  "/-deb": {
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
+    "config": "config---5-e-9-4f3"
+  },
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
+  },
+  "/blog-842": {
+    "component": "component---theme-blog-list-pagea-6-a-7ba",
+    "sidebar": "sidebar---blog-2-a-5-c1d",
+    "items": [
+      {
+        "content": "content---blog-504-de0"
+      },
+      {
+        "content": "content---blogd-9-b-621"
+      }
+    ],
+    "metadata": "metadata---blogb-2-b-df1"
+  },
+  "/blog/2019/09/25/intro-post-183": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-2-a-5-c1d",
+    "content": "content---blog-2019-09-25-intro-post-734-d21"
+  },
+  "/blog/2020/06/15/release-mojito-js-delivery-916": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-2-a-5-c1d",
+    "content": "content---blog-2020-06-15-release-mojito-js-delivery-9-b-6-0eb"
+  },
+  "/help-416": {
+    "component": "component---site-src-pages-help-js-7-e-3-222",
+    "config": "config---5-e-9-4f3"
+  },
+  "/search-90f": {
+    "component": "component---users-robertkingston-documents-github-mojito-website-website-node-modules-docusaurus-theme-search-algolia-src-theme-search-page-index-js-407-d30"
+  },
+  "/users-9b3": {
+    "component": "component---site-src-pages-users-js-1-db-7ac",
+    "config": "config---5-e-9-4f3"
+  },
+  "/docs-eda": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/-8fd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-0-e-3-18c"
+  },
+  "/docs/api-intro-69a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-api-intro-746-31a"
+  },
+  "/docs/example-hash-function-split-test-assignment-78a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-hash-function-split-test-assignmente-93-81d"
+  },
+  "/docs/example-home-862": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-home-911-c95"
+  },
+  "/docs/example-js-delivery-aa-79c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-js-delivery-aa-141-01b"
+  },
+  "/docs/example-js-delivery-cross-trigger-167": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-js-delivery-cross-trigger-15-d-d34"
+  },
+  "/docs/example-js-delivery-divert-6e4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-js-delivery-divert-3-b-0-404"
+  },
+  "/docs/example-js-delivery-partitioned-ramps-e86": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-js-delivery-partitioned-ramps-68-a-93b"
+  },
+  "/docs/example-js-delivery-requestly-staging-9ce": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-js-delivery-requestly-staginge-4-b-5a5"
+  },
+  "/docs/example-js-delivery-simple-ab-1f4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-example-js-delivery-simple-ab-29-c-0c6"
+  },
+  "/docs/js-delivery-api-decision-adapter-bef": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-api-decision-adapter-6-a-4-70a"
+  },
+  "/docs/js-delivery-api-execution-order-78e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-api-execution-orderd-1-b-533"
+  },
+  "/docs/js-delivery-api-storage-adapter-d56": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-api-storage-adapterc-84-7a5"
+  },
+  "/docs/js-delivery-customisation-5c9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-customisation-813-6ef"
+  },
+  "/docs/js-delivery-gulp-commands-cbf": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-gulp-commandsef-0-197"
+  },
+  "/docs/js-delivery-hosting-cc8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-hosting-706-b12"
+  },
+  "/docs/js-delivery-hosting-bitbucket-dc1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-hosting-bitbucket-0-d-3-aaa"
+  },
+  "/docs/js-delivery-hosting-build-script-eb3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-hosting-build-script-56-b-f02"
+  },
+  "/docs/js-delivery-hosting-iam-e2f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-hosting-iamae-5-0d2"
+  },
+  "/docs/js-delivery-hosting-s3-cf-56b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-hosting-s-3-cf-391-749"
+  },
+  "/docs/js-delivery-hosting-snippet-0e4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-hosting-snippet-1-d-9-a7e"
+  },
+  "/docs/js-delivery-intro-996": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-intro-755-4db"
+  },
+  "/docs/js-delivery-preview-launch-a66": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-preview-launchd-3-f-aae"
+  },
+  "/docs/js-delivery-setup-4a7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-setupb-4-f-08c"
+  },
+  "/docs/js-delivery-setup-js-b9f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-setup-jsce-4-e4d"
+  },
+  "/docs/js-delivery-setup-shared-parameters-dba": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-setup-shared-parameters-839-71f"
+  },
+  "/docs/js-delivery-setup-yaml-a59": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-setup-yamlf-8-e-657"
+  },
+  "/docs/js-delivery-test-object-32e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-test-object-57-e-a6d"
+  },
+  "/docs/js-delivery-upgrading-984": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-upgradingfbf-048"
+  },
+  "/docs/js-delivery-utilities-379": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-js-delivery-utilities-5-ca-7e4"
+  },
+  "/docs/r-analytics-intro-22d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-r-analytics-introc-51-fed"
+  },
+  "/docs/snowplow-storage-data-models-202": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-snowplow-storage-data-modelsb-39-7b0"
+  },
+  "/docs/snowplow-storage-events-c45": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-snowplow-storage-events-25-b-64b"
+  },
+  "/docs/snowplow-storage-intro-fa3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-snowplow-storage-intro-927-94b"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-setup-shared-parameters",
+  "id": "js-delivery-setup-shared-parameters",
+  "isDocsHomePage": false,
+  "title": "Experiment shared code & other test parameters",
+  "description": "Your JS and CSS can have a shared scope within an experiment. E.g. two treatment variants might have some styling commonalities. We can reduce repeated code by sharing common elements across variants.",
+  "source": "@site/docs/js-delivery-setup-shared-parameters.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-setup-shared-parameters",
+  "permalink": "/docs/js-delivery-setup-shared-parameters",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-setup-shared-parameters.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Parameters & shared code",
+  "frontMatter": {
+    "id": "js-delivery-setup-shared-parameters",
+    "title": "Experiment shared code & other test parameters",
+    "sidebar_label": "Parameters & shared code"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Setting up experiments with the YAML method",
+    "permalink": "/docs/js-delivery-setup-yaml"
+  },
+  "next": {
+    "title": "Customise your Mojito container shared code & tracking",
+    "permalink": "/docs/js-delivery-customisation"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "unversionedId": "js-delivery-api-execution-order",
+  "id": "js-delivery-api-execution-order",
+  "isDocsHomePage": false,
+  "title": "Mojito test activation conditions & order of execution",
+  "description": "Mojito runs experiments as the browser executes your JavaScript snippet. This article should help you reason about:",
+  "source": "@site/docs/js-delivery-api-execution-order.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-api-execution-order",
+  "permalink": "/docs/js-delivery-api-execution-order",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-api-execution-order.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Test activation & execution order",
+  "frontMatter": {
+    "id": "js-delivery-api-execution-order",
+    "title": "Mojito test activation conditions & order of execution",
+    "sidebar_label": "Test activation & execution order",
+    "mermaid_chart_source": "https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbnN1YmdyYXBoIFwiQ29udGFpbmVyIGNvZGVcIlxuQShNb2ppdG8gbGliIHJ1bnMpIC0tPiBCKFNoYXJlZCBjb2RlIHJ1bnMpIFxuZW5kXG5cbnN1YmdyYXBoIFwiRWFjaCB0ZXN0IG9iamVjdFwiXG5CIC0tPiBEKFwiVGVzdCBsb2FkcyAmIHRyaWdnZXIoKSBleGVjdXRlc1wiKVxuRCAtLT4gfFwi4pyUIFRlc3QgYWN0aXZhdGUoKSBjYWxsZWRcInwgRShcIkNoZWNrOiBGb3JjZWQgaW50byByZWNpcGVcIilcbkUgLS0-IHxcIuKclyBOb3QgZm9yY2VkIGludG8gcmVjaXBlXCJ8IEYoXCJDaGVjazogUHJldmlvdXNseSBidWNrZXRlZFwiKVxuRiAtLT4gfFwi4pyXIE5vdCBwcmV2aW91c2x5IGJ1Y2tldGVkXCJ8IEcoXCJDaGVjazogVGVzdCBzdGF0ZSBpcyAnbGl2ZSdcIilcbkcgLS0-IHxcIuKclCBUZXN0IGlzIGxpdmVcInwgSChcIkFzc2lnbiBTdWJqZWN0IGJ5IHNhbXBsZSByYXRlXCIpXG5cbkUgLS0-IHxcIuKclCBGb3JjZWQgYnkgcHJldmlldyBtb2RlXCJ8IElcbkUgLS0-IHxcIuKclCBGb3JjZWQgYnkgZGl2ZXJ0XCJ8IE4oXCJDaGVjazogVGVzdCBzdGF0ZSBpcyAnbGl2ZSdcIilcbk4gLS0-IHxcIuKclCBSdW4gZGl2ZXJ0ZWQgcmVjaXBlXCJ8IEtcbk4gLS0-IHxcIuKclyBUZXN0IGlzIG5vdCBsaXZlXCJ8IFpcbkYgLS0-IHxcIuKclCBQcmV2aW91c2x5IGFzc2lnbmVkIHJlY2lwZVwifCBJXG5IIC0tPiB8XCLinJQgQnVja2V0ZWQgaW50byB0ZXN0XCJ8IEkoQXNzaWdubWVudCBzdG9yZWQgaW4gY29va2llKVxuXG5zdWJncmFwaCBcIiBcIlxuSSAtLT4gSihFeHBvc3VyZSB0cmFja2luZyBydW5zKVxuSiAtLT4gSyhTaGFyZWQgQ1NTICYgSlMgcnVucylcbksgLS0-IEwoUmVjaXBlIENTUyAmIEpTIHJ1bnMpXG5lbmRcblxuRCAtLT4gfFwi4pyXIFRlc3QgYWN0aXZhdGUoKSBub3QgY2FsbGVkXCJ8IFooQ29tcGxldGUpXG5HIC0tPiB8XCLinJcgVGVzdCBpcyBub3QgbGl2ZVwifCBaXG5IIC0tPiB8XCLinJcgRXhjbHVkZWQgYnkgc2FtcGxlIHJhdGVcInwgWlxuTCAtLT4gWlxuZW5kXG5cblxuY2xhc3NEZWYgcnVuVXNlciBmaWxsOiNhZmEsc3Ryb2tlOiNhZmE7XG5jbGFzcyBCIHJ1blVzZXI7XG5jbGFzcyBEIHJ1blVzZXI7XG5jbGFzcyBLIHJ1blVzZXI7XG5jbGFzcyBMIHJ1blVzZXI7XG4iLCJtZXJtYWlkIjp7InRoZW1lIjoibmV1dHJhbCJ9fQ",
+    "build_notes": "Save as an SVG and add ",
+    "style='font-size": "14px !important;'\" to the svg node as an attribute.\""
+  },
+  "sidebar": "api",
+  "previous": {
+    "title": "Mojito libraries API references",
+    "permalink": "/docs/api-intro"
+  },
+  "next": {
+    "title": "Test object parameter reference in Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-test-object"
+  }
+}

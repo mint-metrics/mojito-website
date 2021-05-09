@@ -1,0 +1,15 @@
+{
+  "permalink": "/blog/2019/09/25/intro-post",
+  "source": "@site/blog/2019-09-25-intro-post.md",
+  "title": "New site for Mojito documentation",
+  "description": "We've now created a new dedicated resource for Mojito documentation and guides. This site should help new and existing Mojito users with making the most out of Mojito.",
+  "date": "2019-09-25T00:00:00.000Z",
+  "formattedDate": "September 25, 2019",
+  "tags": [],
+  "readingTime": 0.445,
+  "truncated": false,
+  "prevItem": {
+    "title": "Release: Mojito JS Delivery v2.3.0",
+    "permalink": "/blog/2020/06/15/release-mojito-js-delivery"
+  }
+}

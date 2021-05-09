@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-api-storage-adapter",
+  "id": "js-delivery-api-storage-adapter",
+  "isDocsHomePage": false,
+  "title": "Storage adapter & tracking reference",
+  "description": "Mojito exposes three key events which you can capture in your Analytics tool:",
+  "source": "@site/../docs/js-delivery-api-storage-adapter.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-api-storage-adapter",
+  "permalink": "/docs/js-delivery-api-storage-adapter",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/js-delivery-api-storage-adapter.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Storage adapter & tracking",
+  "frontMatter": {
+    "id": "js-delivery-api-storage-adapter",
+    "title": "Storage adapter & tracking reference",
+    "sidebar_label": "Storage adapter & tracking"
+  },
+  "sidebar": "api",
+  "previous": {
+    "title": "Test object parameter reference in Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-test-object"
+  },
+  "next": {
+    "title": "Customise your decision adapter & bucketing",
+    "permalink": "/docs/js-delivery-api-decision-adapter"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-hosting",
+  "id": "js-delivery-hosting",
+  "isDocsHomePage": false,
+  "title": "Hosting your Mojito split testing container",
+  "description": "You own the full source to your Mojito container, so you have unlimited options to host it, including:",
+  "source": "@site/docs/js-delivery-hosting.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-hosting",
+  "permalink": "/docs/js-delivery-hosting",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-hosting.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Host your container",
+  "frontMatter": {
+    "id": "js-delivery-hosting",
+    "title": "Hosting your Mojito split testing container",
+    "sidebar_label": "Host your container"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Previewing & launching experiments with Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-preview-launch"
+  },
+  "next": {
+    "title": "1. Set up AWS S3 & Cloudfront distribution for hosting Mojito",
+    "permalink": "/docs/js-delivery-hosting-s3-cf"
+  }
+}

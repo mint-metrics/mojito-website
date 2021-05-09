@@ -1,0 +1,27 @@
+{
+  "unversionedId": "home",
+  "id": "home",
+  "isDocsHomePage": true,
+  "title": "Mojito framework overview",
+  "description": "Mojito is a modular, source-controlled split testing framework that lets you build, launch and analyse experiments via Git/CI.",
+  "source": "@site/../docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/intro.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Overview",
+  "frontMatter": {
+    "id": "home",
+    "title": "Mojito framework overview",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "Introduction to Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-intro"
+  }
+}

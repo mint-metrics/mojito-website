@@ -1,0 +1,31 @@
+{
+  "unversionedId": "example-js-delivery-cross-trigger",
+  "id": "example-js-delivery-cross-trigger",
+  "isDocsHomePage": false,
+  "title": "Triggering experiments remotely from other A/B tests or code",
+  "description": "There may come a time where you need to trigger an experiment remotely. Mojito lets you trigger experiments from outside the test object.",
+  "source": "@site/../docs/example-js-delivery-cross-trigger.md",
+  "sourceDirName": ".",
+  "slug": "/example-js-delivery-cross-trigger",
+  "permalink": "/docs/example-js-delivery-cross-trigger",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/example-js-delivery-cross-trigger.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Remotely triggered experiments",
+  "frontMatter": {
+    "id": "example-js-delivery-cross-trigger",
+    "title": "Triggering experiments remotely from other A/B tests or code",
+    "sidebar_label": "Remotely triggered experiments"
+  },
+  "sidebar": "examples",
+  "previous": {
+    "title": "Divert all traffic to the winning variant in Mojito",
+    "permalink": "/docs/example-js-delivery-divert"
+  },
+  "next": {
+    "title": "Containing ramp spillover with partitioned ramps & hash based splits",
+    "permalink": "/docs/example-js-delivery-partitioned-ramps"
+  }
+}

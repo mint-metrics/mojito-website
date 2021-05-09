@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-hosting-iam",
+  "id": "js-delivery-hosting-iam",
+  "isDocsHomePage": false,
+  "title": "3. Create publishing user credentials and locked-down IAM policy",
+  "description": "We'll use this account to publish Mojito JS containers from your IDE and/or CI pipeline. It's a good practice to lock down the permissions on these users to the specific files/folders they need.",
+  "source": "@site/docs/js-delivery-hosting-iam.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-hosting-iam",
+  "permalink": "/docs/js-delivery-hosting-iam",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-hosting-iam.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "3. Setup AWS user & IAM access",
+  "frontMatter": {
+    "id": "js-delivery-hosting-iam",
+    "title": "3. Create publishing user credentials and locked-down IAM policy",
+    "sidebar_label": "3. Setup AWS user & IAM access"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "2. Configure your Mojito container's Gulp build script",
+    "permalink": "/docs/js-delivery-hosting-build-script"
+  },
+  "next": {
+    "title": "4. Set up Bitbucket Pipelines CI",
+    "permalink": "/docs/js-delivery-hosting-bitbucket"
+  }
+}

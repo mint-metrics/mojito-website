@@ -1,0 +1,27 @@
+{
+  "unversionedId": "example-home",
+  "id": "example-home",
+  "isDocsHomePage": false,
+  "title": "Example experiments, reports & recipes to get started",
+  "description": "Mojito makes it easy to build sophisticated experiments and insightful reports. While our API documentation may be fairly complete, examples are a useful way to tie it all together.",
+  "source": "@site/../docs/example-home.md",
+  "sourceDirName": ".",
+  "slug": "/example-home",
+  "permalink": "/docs/example-home",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/example-home.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Overview",
+  "frontMatter": {
+    "id": "example-home",
+    "title": "Example experiments, reports & recipes to get started",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "examples",
+  "next": {
+    "title": "Build a simple A/B test in Mojito",
+    "permalink": "/docs/example-js-delivery-simple-ab"
+  }
+}

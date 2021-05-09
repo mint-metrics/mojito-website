@@ -1,0 +1,31 @@
+{
+  "unversionedId": "snowplow-storage-events",
+  "id": "snowplow-storage-events",
+  "isDocsHomePage": false,
+  "title": "Mojito Snowplow Storage Events & JavaScript tags",
+  "description": "For most experiment reports, we're interested in collecting just three events:",
+  "source": "@site/docs/snowplow-storage-events.md",
+  "sourceDirName": ".",
+  "slug": "/snowplow-storage-events",
+  "permalink": "/docs/snowplow-storage-events",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/snowplow-storage-events.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Events & tags",
+  "frontMatter": {
+    "id": "snowplow-storage-events",
+    "title": "Mojito Snowplow Storage Events & JavaScript tags",
+    "sidebar_label": "Events & tags"
+  },
+  "sidebar": "api",
+  "previous": {
+    "title": "Gulp CLI reference for Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-gulp-commands"
+  },
+  "next": {
+    "title": "Mojito Snowplow/Redshift data models",
+    "permalink": "/docs/snowplow-storage-data-models"
+  }
+}

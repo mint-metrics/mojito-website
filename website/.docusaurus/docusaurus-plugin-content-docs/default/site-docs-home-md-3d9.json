@@ -1,0 +1,22 @@
+{
+  "unversionedId": "home",
+  "id": "home",
+  "isDocsHomePage": true,
+  "title": "home",
+  "description": "",
+  "source": "@site/docs/home.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/home.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "next": {
+    "title": "Introduction to Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-intro"
+  }
+}

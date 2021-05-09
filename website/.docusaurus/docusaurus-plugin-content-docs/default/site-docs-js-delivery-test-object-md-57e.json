@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-test-object",
+  "id": "js-delivery-test-object",
+  "isDocsHomePage": false,
+  "title": "Test object parameter reference in Mojito JS Delivery",
+  "description": "The test object contains everything an experiment needs to run, including the trigger, tracking information and recipe code (or variants). When you pass all this information into the Mojito.addTest() function, Mojito will execute all the logic in your experiment based on its order of execution.",
+  "source": "@site/docs/js-delivery-test-object.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-test-object",
+  "permalink": "/docs/js-delivery-test-object",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-test-object.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Test object parameters",
+  "frontMatter": {
+    "id": "js-delivery-test-object",
+    "title": "Test object parameter reference in Mojito JS Delivery",
+    "sidebar_label": "Test object parameters"
+  },
+  "sidebar": "api",
+  "previous": {
+    "title": "Mojito test activation conditions & order of execution",
+    "permalink": "/docs/js-delivery-api-execution-order"
+  },
+  "next": {
+    "title": "Storage adapter & tracking reference",
+    "permalink": "/docs/js-delivery-api-storage-adapter"
+  }
+}

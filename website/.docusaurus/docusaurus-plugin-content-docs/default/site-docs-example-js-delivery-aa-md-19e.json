@@ -1,0 +1,31 @@
+{
+  "unversionedId": "example-js-delivery-aa",
+  "id": "example-js-delivery-aa",
+  "isDocsHomePage": false,
+  "title": "Run an AA test in Mojito",
+  "description": "An AA test runs identical variants against each other so experimenters may detect issues with sample ratio mismatch (SRM), other non-random differences between the groups or general instrumention issues.",
+  "source": "@site/../docs/example-js-delivery-aa.md",
+  "sourceDirName": ".",
+  "slug": "/example-js-delivery-aa",
+  "permalink": "/docs/example-js-delivery-aa",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/example-js-delivery-aa.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Run an AA test",
+  "frontMatter": {
+    "id": "example-js-delivery-aa",
+    "title": "Run an AA test in Mojito",
+    "sidebar_label": "Run an AA test"
+  },
+  "sidebar": "examples",
+  "previous": {
+    "title": "Build a simple A/B test in Mojito",
+    "permalink": "/docs/example-js-delivery-simple-ab"
+  },
+  "next": {
+    "title": "Create & access your staging environment for A/B test QA with Requestly",
+    "permalink": "/docs/example-js-delivery-requestly-staging"
+  }
+}

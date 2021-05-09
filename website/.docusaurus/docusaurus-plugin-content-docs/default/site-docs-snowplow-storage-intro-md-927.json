@@ -1,0 +1,31 @@
+{
+  "unversionedId": "snowplow-storage-intro",
+  "id": "snowplow-storage-intro",
+  "isDocsHomePage": false,
+  "title": "Mojito Snowplow Storage overview",
+  "description": "This component allows you to collect experiment events and perform the necessary data modelling for Mojito R Analytics reports and other tools.",
+  "source": "@site/docs/snowplow-storage-intro.md",
+  "sourceDirName": ".",
+  "slug": "/snowplow-storage-intro",
+  "permalink": "/docs/snowplow-storage-intro",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/snowplow-storage-intro.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Introduction",
+  "frontMatter": {
+    "id": "snowplow-storage-intro",
+    "title": "Mojito Snowplow Storage overview",
+    "sidebar_label": "Introduction"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Upgrade your Mojito split testing container to the latest version",
+    "permalink": "/docs/js-delivery-upgrading"
+  },
+  "next": {
+    "title": "Mojito R Analytics Overview",
+    "permalink": "/docs/r-analytics-intro"
+  }
+}

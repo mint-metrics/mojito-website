@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-setup",
+  "id": "js-delivery-setup",
+  "isDocsHomePage": false,
+  "title": "Setting up experiments with Mojito JS Delivery",
+  "description": "There are two approaches to setup experiments in Mojito. The gulp builder supports both methods when building the JS container.",
+  "source": "@site/../docs/js-delivery-setup.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-setup",
+  "permalink": "/docs/js-delivery-setup",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/../docs/js-delivery-setup.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Two supported methods",
+  "frontMatter": {
+    "id": "js-delivery-setup",
+    "title": "Setting up experiments with Mojito JS Delivery",
+    "sidebar_label": "Two supported methods"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction to Mojito JS Delivery",
+    "permalink": "/docs/js-delivery-intro"
+  },
+  "next": {
+    "title": "Setting up experiments with the JS method",
+    "permalink": "/docs/js-delivery-setup-js"
+  }
+}

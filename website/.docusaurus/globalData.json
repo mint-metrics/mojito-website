@@ -1,0 +1,188 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "home",
+          "docs": [
+            {
+              "id": "api-intro",
+              "path": "/docs/api-intro",
+              "sidebar": "api"
+            },
+            {
+              "id": "example-hash-function-split-test-assignment",
+              "path": "/docs/example-hash-function-split-test-assignment",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-home",
+              "path": "/docs/example-home",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-js-delivery-aa",
+              "path": "/docs/example-js-delivery-aa",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-js-delivery-cross-trigger",
+              "path": "/docs/example-js-delivery-cross-trigger",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-js-delivery-divert",
+              "path": "/docs/example-js-delivery-divert",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-js-delivery-partitioned-ramps",
+              "path": "/docs/example-js-delivery-partitioned-ramps",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-js-delivery-requestly-staging",
+              "path": "/docs/example-js-delivery-requestly-staging",
+              "sidebar": "examples"
+            },
+            {
+              "id": "example-js-delivery-simple-ab",
+              "path": "/docs/example-js-delivery-simple-ab",
+              "sidebar": "examples"
+            },
+            {
+              "id": "home",
+              "path": "/docs/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-api-decision-adapter",
+              "path": "/docs/js-delivery-api-decision-adapter",
+              "sidebar": "api"
+            },
+            {
+              "id": "js-delivery-api-execution-order",
+              "path": "/docs/js-delivery-api-execution-order",
+              "sidebar": "api"
+            },
+            {
+              "id": "js-delivery-api-storage-adapter",
+              "path": "/docs/js-delivery-api-storage-adapter",
+              "sidebar": "api"
+            },
+            {
+              "id": "js-delivery-customisation",
+              "path": "/docs/js-delivery-customisation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-gulp-commands",
+              "path": "/docs/js-delivery-gulp-commands",
+              "sidebar": "api"
+            },
+            {
+              "id": "js-delivery-hosting",
+              "path": "/docs/js-delivery-hosting",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-hosting-bitbucket",
+              "path": "/docs/js-delivery-hosting-bitbucket",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-hosting-build-script",
+              "path": "/docs/js-delivery-hosting-build-script",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-hosting-iam",
+              "path": "/docs/js-delivery-hosting-iam",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-hosting-s3-cf",
+              "path": "/docs/js-delivery-hosting-s3-cf",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-hosting-snippet",
+              "path": "/docs/js-delivery-hosting-snippet",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-intro",
+              "path": "/docs/js-delivery-intro",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-preview-launch",
+              "path": "/docs/js-delivery-preview-launch",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-setup",
+              "path": "/docs/js-delivery-setup",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-setup-js",
+              "path": "/docs/js-delivery-setup-js",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-setup-shared-parameters",
+              "path": "/docs/js-delivery-setup-shared-parameters",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-setup-yaml",
+              "path": "/docs/js-delivery-setup-yaml",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-test-object",
+              "path": "/docs/js-delivery-test-object",
+              "sidebar": "api"
+            },
+            {
+              "id": "js-delivery-upgrading",
+              "path": "/docs/js-delivery-upgrading",
+              "sidebar": "docs"
+            },
+            {
+              "id": "js-delivery-utilities",
+              "path": "/docs/js-delivery-utilities",
+              "sidebar": "api"
+            },
+            {
+              "id": "r-analytics-intro",
+              "path": "/docs/r-analytics-intro",
+              "sidebar": "docs"
+            },
+            {
+              "id": "snowplow-storage-data-models",
+              "path": "/docs/snowplow-storage-data-models",
+              "sidebar": "api"
+            },
+            {
+              "id": "snowplow-storage-events",
+              "path": "/docs/snowplow-storage-events",
+              "sidebar": "api"
+            },
+            {
+              "id": "snowplow-storage-intro",
+              "path": "/docs/snowplow-storage-intro",
+              "sidebar": "docs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

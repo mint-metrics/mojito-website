@@ -1,0 +1,31 @@
+{
+  "unversionedId": "js-delivery-hosting-build-script",
+  "id": "js-delivery-hosting-build-script",
+  "isDocsHomePage": false,
+  "title": "2. Configure your Mojito container's Gulp build script",
+  "description": "Settings for the build script are managed inside the config.js located in the repository root directory. Four parameters are currently supported and it affects where you publish the container to:",
+  "source": "@site/docs/js-delivery-hosting-build-script.md",
+  "sourceDirName": ".",
+  "slug": "/js-delivery-hosting-build-script",
+  "permalink": "/docs/js-delivery-hosting-build-script",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/js-delivery-hosting-build-script.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "2. Configure build script",
+  "frontMatter": {
+    "id": "js-delivery-hosting-build-script",
+    "title": "2. Configure your Mojito container's Gulp build script",
+    "sidebar_label": "2. Configure build script"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "1. Set up AWS S3 & Cloudfront distribution for hosting Mojito",
+    "permalink": "/docs/js-delivery-hosting-s3-cf"
+  },
+  "next": {
+    "title": "3. Create publishing user credentials and locked-down IAM policy",
+    "permalink": "/docs/js-delivery-hosting-iam"
+  }
+}

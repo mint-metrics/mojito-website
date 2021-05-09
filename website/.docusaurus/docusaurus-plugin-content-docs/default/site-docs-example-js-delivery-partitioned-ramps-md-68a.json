@@ -1,0 +1,31 @@
+{
+  "unversionedId": "example-js-delivery-partitioned-ramps",
+  "id": "example-js-delivery-partitioned-ramps",
+  "isDocsHomePage": false,
+  "title": "Containing ramp spillover with partitioned ramps & hash based splits",
+  "description": "Ramping-up experiments (from limited canary releases) is a popular way of managing risks and bugs in experiments before exposing all your traffic. A typical ramp-up process looks like this:",
+  "source": "@site/docs/example-js-delivery-partitioned-ramps.md",
+  "sourceDirName": ".",
+  "slug": "/example-js-delivery-partitioned-ramps",
+  "permalink": "/docs/example-js-delivery-partitioned-ramps",
+  "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/docs/example-js-delivery-partitioned-ramps.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Partitioned ramps & spillover protection",
+  "frontMatter": {
+    "id": "example-js-delivery-partitioned-ramps",
+    "title": "Containing ramp spillover with partitioned ramps & hash based splits",
+    "sidebar_label": "Partitioned ramps & spillover protection"
+  },
+  "sidebar": "examples",
+  "previous": {
+    "title": "Triggering experiments remotely from other A/B tests or code",
+    "permalink": "/docs/example-js-delivery-cross-trigger"
+  },
+  "next": {
+    "title": "How to use hash functions for split test assignment",
+    "permalink": "/docs/example-hash-function-split-test-assignment"
+  }
+}
