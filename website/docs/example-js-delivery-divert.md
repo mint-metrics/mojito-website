@@ -7,7 +7,7 @@ When an experiment you run is wildly successful, you may want to send 100% of el
 
 ![Publish a variant to all traffic](/img/examples/js-delivery-divert.png)
 
- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntFeHBlcmltZW50fVxuICBCIC0tPnwwJXwgRFtDb250cm9sXVxuICBCIC0tPnwxMDAlfCBFW1RyZWF0bWVudF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ 
+<!-- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntFeHBlcmltZW50fVxuICBCIC0tPnwwJXwgRFtDb250cm9sXVxuICBCIC0tPnwxMDAlfCBFW1RyZWF0bWVudF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ  -->
 
 Consider the following circumstances:
 

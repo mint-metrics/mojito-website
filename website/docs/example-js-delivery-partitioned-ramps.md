@@ -11,7 +11,7 @@ Ramping-up experiments (from limited canary releases) is a popular way of managi
     -   `A`) Ramp-up the existing experiment to 100% traffic without re-assigning users
     -   `B`) Restart & re-assign users in the experiment at 100% traffic
 
-Choosing option `A`, and ramping from 10%-&gt;100%, can [impact your split test results through Simpson's Paradox (see Section #6)](http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf). Meanwhile option `B` - restarting the experiment and re-assigning subjects - can cause spillover where users in the `Control` group are exposed to the intervention in the `Treatment` group and vice versa. Option `B` dilutes the results of your experiment and can mute the effect you hope to measure.
+Choosing option `A`, and ramping from 10%->100%, can [impact your split test results through Simpson's Paradox (see Section #6)](http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf). Meanwhile option `B` - restarting the experiment and re-assigning subjects - can cause spillover where users in the `Control` group are exposed to the intervention in the `Treatment` group and vice versa. Option `B` dilutes the results of your experiment and can mute the effect you hope to measure.
 
 Restarting without acknowledging the prior run, means you'll treat all users as part of the same population to draw from:
 
@@ -27,8 +27,8 @@ Users from the initial 10% run _will_ be randomly assigned to your new 100% run,
 
 In this case, none of the users in the 10% run will be included within the 100% ramp.
 
-&gt; **Prerequisites**:
-&gt; You roughly understand [how hash-based user assignment in split tests](example-hash-function-split-test-assignment) work.
+> **Prerequisites**:
+> You roughly understand [how hash-based user assignment in split tests](example-hash-function-split-test-assignment) work.
 
 ### 1. Before the experiment
 

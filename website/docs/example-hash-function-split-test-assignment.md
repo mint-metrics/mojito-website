@@ -73,8 +73,8 @@ parseInt('404c9f9d', 16) / 0xffffffff;
 
 For each test, we need to make 2-3 decisions. And each decision uses a quarter of the hash digest:
 
-1.  Test sample rate: `0x404c9f9d / 0xffffffff` -&gt; `0.25116918172016023`
-2.  Recipe assignment: `0x26876611 / 0xffffffff` -&gt; `0.15050352019036736`
+1.  Test sample rate: `0x404c9f9d / 0xffffffff` -> `0.25116918172016023`
+2.  Recipe assignment: `0x26876611 / 0xffffffff` -> `0.15050352019036736`
 
 Each 'decision' is capable of producing over 4 billion values - more than enough granularity for our purposes (it's probably overkill). More 'secure' hash functions exist, but we only need speed & reliability. We picked it because MSFT/LinkedIn et al use it, MD5 digests are pervasive across DBs/languages, and from our testing at Mint Metrics, it produces nice flat & even distributions:
 
@@ -103,8 +103,8 @@ trigger: trigger.js
 
 And taking the example decisions from the user above, we know the decisions they will get:
 
--   Test sample rate: `0.251... < 0.5` -&gt; Included in test
--   Recipe assignment: `0.15... > 0.1` -&gt; Assigned to `Treatment`
+-   Test sample rate: `0.251... < 0.5` -> Included in test
+-   Recipe assignment: `0.15... > 0.1` -> Assigned to `Treatment`
 
 No matter when/where this user is bucketed (e.g. app/web/server) they will **always** get the same decisions because of their user ID.
 

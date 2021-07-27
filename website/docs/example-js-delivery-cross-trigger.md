@@ -7,12 +7,12 @@ There may come a time where you need to trigger an experiment remotely. Mojito l
 
 ![Cross-experiment triggers](/img/examples/js-delivery-cross-trigger.png)
 
- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntUZXN0IDF9XG4gIEIgLS0-fDUwJXwgRFtDb250cm9sXVxuICBCIC0tPnw1MCV8IEVbVHJlYXRtZW50XVxuXHRFIC0tPnwxMDAlfCBGe1Rlc3QgMn1cbiAgRiAtLT58NTAlfCBHW0NvbnRyb2xdXG4gIEYgLS0-fDUwJXwgSFtUcmVhdG1lbnRdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0 
+<!-- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntUZXN0IDF9XG4gIEIgLS0-fDUwJXwgRFtDb250cm9sXVxuICBCIC0tPnw1MCV8IEVbVHJlYXRtZW50XVxuXHRFIC0tPnwxMDAlfCBGe1Rlc3QgMn1cbiAgRiAtLT58NTAlfCBHW0NvbnRyb2xdXG4gIEYgLS0-fDUwJXwgSFtUcmVhdG1lbnRdIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0  -->
 
 Imagine we're working at Booking.com and we want to increase bookings for "Holiday Rentals". One idea might be to show offer banners in SERPs
 
-&gt; **Pre-requisites** 
-&gt; You're familiar with [creating a simple A/B test](example-js-delivery-simple-ab).
+> **Pre-requisites** 
+> You're familiar with [creating a simple A/B test](example-js-delivery-simple-ab).
 
 ## Experiment parameters
 
@@ -201,8 +201,8 @@ gulp build && gulp publish
 
 ```
 
-&gt; Note: 
-&gt; Unless you're reading this at Booking.com, you probably don't have publish access to their domains. Instead, we can paste the minified Mojito container code into the Browser console to see that everything works.
+> Note: 
+> Unless you're reading this at Booking.com, you probably don't have publish access to their domains. Instead, we can paste the minified Mojito container code into the Browser console to see that everything works.
 
 Since we'll be testing on Booking.com's SERP, we need to tag the URL with Mojito preview parameters for:
 

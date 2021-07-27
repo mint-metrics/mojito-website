@@ -7,11 +7,11 @@ Let's imagine we're working for Bing and we want to test showing no image on the
 
 ![How an A/B test is structured](/img/examples/js-delivery-simple-ab.png)
 
- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntFeHBlcmltZW50fVxuICBCIC0tPnw1MCV8IERbQ29udHJvbF1cbiAgQiAtLT58NTAlfCBFW1RyZWF0bWVudF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ 
+<!-- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntFeHBlcmltZW50fVxuICBCIC0tPnw1MCV8IERbQ29udHJvbF1cbiAgQiAtLT58NTAlfCBFW1RyZWF0bWVudF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ  -->
 
-&gt; **Pre-requisites** 
-&gt; 1) You've [cloned Mojito JS Delivery locally](https://github.com/mint-metrics/mojito-js-delivery), with npm, Node and Gulp installed. 
-&gt; 2) You've setup [tracking through your storageAdapter, or used our example one](/docs/js-delivery-api-storage-adapter#example-storage-adapter--test-object-override).
+> **Pre-requisites** 
+> 1) You've [cloned Mojito JS Delivery locally](https://github.com/mint-metrics/mojito-js-delivery), with npm, Node and Gulp installed. 
+> 2) You've setup [tracking through your storageAdapter, or used our example one](/docs/js-delivery-api-storage-adapter#example-storage-adapter--test-object-override).
 
 ## Experiment parameters
 
@@ -95,7 +95,7 @@ function js () {
 
 ```
 
-&gt; Note: The classList API is not supported well by older browsers, so you may need to create a [default exclusion rule](js-delivery-customisation#default-exclusion-rule) in your container `shared-code.js`.
+> Note: The classList API is not supported well by older browsers, so you may need to create a [default exclusion rule](js-delivery-customisation#default-exclusion-rule) in your container `shared-code.js`.
 
 ## 4. Define your trigger properly
 
@@ -149,7 +149,7 @@ gulp publish
 
 ### Preview your experiment
 
-&gt; **NB**: You must have Mojito installed on the page or [use a Chrome Extension like Requestly to inject Mojito](example-js-delivery-requestly-staging) into the page for testing.
+> **NB**: You must have Mojito installed on the page or [use a Chrome Extension like Requestly to inject Mojito](example-js-delivery-requestly-staging) into the page for testing.
 
 1.  Browse to [www.bing.com](https://www.bing.com/). 
 

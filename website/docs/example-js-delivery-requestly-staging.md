@@ -9,10 +9,10 @@ Here you can see an example of us testing some tracking updates in `STAGING` bef
 
 ![Example environemnts in Bitbucket](/img/examples/js-delivery-requestly-environments.png)
 
-&gt; **Pre-requisites**: 
-&gt;
-&gt; 1.  You know how to [create a simple experiment](example-js-delivery-simple-ab) in Mojito. 
-&gt; 2.  You're hoting Mojito JS Delivery [using AWS S3](js-delivery-hosting) or some other hosting mechanism in Mojito.
+> **Pre-requisites**: 
+>
+> 1.  You know how to [create a simple experiment](example-js-delivery-simple-ab) in Mojito. 
+> 2.  You're hoting Mojito JS Delivery [using AWS S3](js-delivery-hosting) or some other hosting mechanism in Mojito.
 
 ## The two environments
 

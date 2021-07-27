@@ -90,7 +90,7 @@ Instead, we treat any of Snowplow's rich, high-fidelity events as conversions. C
 -   Events
 -   Page views
 
-Even though we select all conversion events into the conversion tables, our reports ensure proper causality and attribution. Only conversions after a subject's first exposure are attributed to the experiment. Then, we can say: Treatment (`Cause`) -&gt; Conversion (`Effect`).
+Even though we select all conversion events into the conversion tables, our reports ensure proper causality and attribution. Only conversions after a subject's first exposure are attributed to the experiment. Then, we can say: Treatment (`Cause`) -> Conversion (`Effect`).
 
 Snowplow data is insanely rich. You'll be able to perform much deeper analysis than you can in non-analytical split tetsing tools.
 

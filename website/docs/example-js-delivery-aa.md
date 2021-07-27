@@ -12,8 +12,8 @@ A typical AA test will have two groups:
 -   Control group: No change
 -   Treatment group: No change
 
-&gt; **Pre-requisites**: 
-&gt; You're [familiar with creating a simple experiment](example-js-delivery-simple-ab) in Mojito. 
+> **Pre-requisites**: 
+> You're [familiar with creating a simple experiment](example-js-delivery-simple-ab) in Mojito. 
 
 ## Experiment parameters
 
