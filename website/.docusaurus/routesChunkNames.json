@@ -25,9 +25,9 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/blog-842": {
+  "/blog-bef": {
     "component": "component---theme-blog-list-pagea-6-a-7ba",
-    "sidebar": "sidebar---blog-2-a-5-c1d",
+    "sidebar": "sidebar---blogb-66-567",
     "items": [
       {
         "content": "content---blog-504-de0"
@@ -38,22 +38,22 @@
     ],
     "metadata": "metadata---blogb-2-b-df1"
   },
-  "/blog/2019/09/25/intro-post-183": {
+  "/blog/2019/09/25/intro-post-0c7": {
     "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-2-a-5-c1d",
+    "sidebar": "sidebar---blogb-66-567",
     "content": "content---blog-2019-09-25-intro-post-734-d21"
   },
-  "/blog/2020/06/15/release-mojito-js-delivery-916": {
+  "/blog/2020/06/15/release-mojito-js-delivery-e1c": {
     "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-2-a-5-c1d",
+    "sidebar": "sidebar---blogb-66-567",
     "content": "content---blog-2020-06-15-release-mojito-js-delivery-9-b-6-0eb"
   },
   "/help-416": {
     "component": "component---site-src-pages-help-js-7-e-3-222",
     "config": "config---5-e-9-4f3"
   },
-  "/search-90f": {
-    "component": "component---users-robertkingston-documents-github-mojito-website-website-node-modules-docusaurus-theme-search-algolia-src-theme-search-page-index-js-407-d30"
+  "/search-d3e": {
+    "component": "component---e-mygithub-mojito-website-website-node-modules-docusaurus-theme-search-algolia-src-theme-search-page-index-jsfc-1-515"
   },
   "/users-9b3": {
     "component": "component---site-src-pages-users-js-1-db-7ac",

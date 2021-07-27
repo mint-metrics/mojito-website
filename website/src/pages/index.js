@@ -6,6 +6,9 @@
  */
 
 const React = require('react');
+import Container from '../v1-components/Container';
+import GridBlock from '../v1-components/GridBlock';
+import MarkdownBlock from '../v1-components/MarkdownBlock';
 
 const CompLibrary = {
   Container: props => <div {...props}></div>,
@@ -14,10 +17,6 @@ const CompLibrary = {
 };
 
 import Layout from "@theme/Layout";
-
-const MarkdownBlock = CompLibrary.MarkdownBlock;/* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
@@ -231,7 +230,7 @@ class Index extends React.Component {
           },
         ]}
       </Block>
-    );
+    ); 
 
     const Features = () => (
       <Block layout="fourColumn">
@@ -287,7 +286,7 @@ class Index extends React.Component {
               <p>You\'ll need <a href="https://nodejs.org/en/">Node</a>, <a href="https://www.npmjs.com/get-npm">npm</a> and <a href="https://gulpjs.com/">Gulp CLI</a> installed.</p>\
               <pre style="max-width: 900px;margin-left: auto;margin-right: auto;"><code class="hljs css language-shell" style="text-align: left;">\
               <span class="comment"># Download Mojito JS Delivery</span><br />\
-              <span class="command">git clone https://github.com/mint-metrics/mojito-js-delivery.git</span><br />\
+              <span class="command">git clone <a href="https://github.com/mint-metrics/mojito-js-delivery.git">https://github.com/mint-metrics/mojito-js-delivery.git</a></span><br />\
               <span class="comment">cd mojito-js-delivery</span><br />\
               <span class="comment">npm install</span><br />\
               <br />\

@@ -10,9 +10,9 @@
           "versionEditUrlLocalized": "https://github.com/mint-metrics/mojito-website/edit/master/docs/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/robertkingston/Documents/github/mojito-website/website/sidebars.json",
-          "contentPath": "/Users/robertkingston/Documents/github/mojito-website/website/docs",
-          "contentPathLocalized": "/Users/robertkingston/Documents/github/mojito-website/website/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "E:\\mygithub\\mojito-website\\website\\sidebars.json",
+          "contentPath": "E:\\mygithub\\mojito-website\\website\\docs",
+          "contentPathLocalized": "E:\\mygithub\\mojito-website\\website\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "mainDocId": "home",
           "sidebars": {
             "docs": [

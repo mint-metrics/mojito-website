@@ -75,24 +75,6 @@ export default {
       ],
       "hideOnScroll": false
     },
-    "footer": {
-      "links": [
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Twitter",
-              "to": "https://twitter.com/mintmetrics_io"
-            }
-          ]
-        }
-      ],
-      "copyright": "Copyright © 2021 Mint Metrics Pty Ltd",
-      "logo": {
-        "src": "img/dark.svg"
-      },
-      "style": "light"
-    },
     "algolia": {
       "apiKey": "fb512391b69cbe072f0ed74c938f64bc",
       "indexName": "mojito_mint_metrics",

@@ -44,17 +44,17 @@ export default [
 },
 {
   path: '/blog',
-  component: ComponentCreator('/blog','842'),
+  component: ComponentCreator('/blog','bef'),
   exact: true,
 },
 {
   path: '/blog/2019/09/25/intro-post',
-  component: ComponentCreator('/blog/2019/09/25/intro-post','183'),
+  component: ComponentCreator('/blog/2019/09/25/intro-post','0c7'),
   exact: true,
 },
 {
   path: '/blog/2020/06/15/release-mojito-js-delivery',
-  component: ComponentCreator('/blog/2020/06/15/release-mojito-js-delivery','916'),
+  component: ComponentCreator('/blog/2020/06/15/release-mojito-js-delivery','e1c'),
   exact: true,
 },
 {
@@ -64,7 +64,7 @@ export default [
 },
 {
   path: '/search',
-  component: ComponentCreator('/search','90f'),
+  component: ComponentCreator('/search','d3e'),
   exact: true,
 },
 {
