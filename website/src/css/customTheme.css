@@ -238,11 +238,6 @@ pre code
   }
 }
 
-.navbar--fixed-top .react-toggle
-{
-  display: none;
-}
-
 /* v1 css (https://raw.githubusercontent.com/facebook/jest/v27.0.0-next.5/website/src/components/v1/legacyCSS.css) */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.

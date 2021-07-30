@@ -78,6 +78,11 @@ module.exports={
       "apiKey": "fb512391b69cbe072f0ed74c938f64bc",
       "indexName": "mojito_mint_metrics",
       "algoliaOptions": {}
+    },
+    "colorMode": {
+      "defaultMode": "light",
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false
     }
   }
 }
