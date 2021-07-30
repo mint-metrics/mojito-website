@@ -68,7 +68,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('home')}>Get started</Button>
+            <Button href={docUrl('docs')}>Get started</Button>
             <Button href="https://mintmetrics.io/mojito/introducing-mojito-open-source-self-hosted-experimentation-stack/">Read intro blog post</Button>
           </PromoSection>
         </div>
