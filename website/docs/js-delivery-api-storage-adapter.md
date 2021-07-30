@@ -60,8 +60,6 @@ Variant code for each recipe's `js()` is executed within tryCatch. Any errors ca
 
 ## Example storage adapter & test object override
 
-DOCUSAURUS_CODE_TABS
-
 Shared code
 
 ```js
@@ -145,4 +143,3 @@ Mojito.addTest({
 
 ```
 
-END_DOCUSAURUS_CODE_TABS

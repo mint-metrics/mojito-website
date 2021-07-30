@@ -7,8 +7,6 @@ The test object contains everything an experiment needs to run, including the tr
 
 ## Example test objects in `JS` & `YAML` formats
 
-DOCUSAURUS_CODE_TABS
-
 JavaScript
 
 ```js
@@ -96,7 +94,6 @@ body {
 
 ```
 
-END_DOCUSAURUS_CODE_TABS
 
 ## Test object: Root level
 
