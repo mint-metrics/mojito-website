@@ -70,8 +70,6 @@ gulp new --ab ex1 && gulp new --ab ex2
 
 We'll configure the first experiment like so:
 
-DOCUSAURUS_CODE_TABS
-
 config.yml
 
 ```yml
@@ -134,8 +132,6 @@ function treatment () {
 
 ```
 
-END_DOCUSAURUS_CODE_TABS
-
 Notice how in `1.js`, we call for `Mojito.testObjects.ex2`? From here, we can access any variable on the `EX2` test object - including it's `activate()` function!
 
 As long as we know it's the right time to activate the experiment, it's ready to call the test's `activate()` function. You may like to use some defensive checks to ensure the test object and everything else is ready.
@@ -143,8 +139,6 @@ As long as we know it's the right time to activate the experiment, it's ready to
 ## 3. Configure the second experiment: EX2
 
 EX1 will be calling this experiment. Let's configure it like so:
-
-DOCUSAURUS_CODE_TABS
 
 config.yml
 
@@ -186,8 +180,6 @@ function treatment () {
 }
 
 ```
-
-END_DOCUSAURUS_CODE_TABS
 
 In this experiment, we can use an empty trigger function because we call the test's `activate()` function from `EX1`.
 

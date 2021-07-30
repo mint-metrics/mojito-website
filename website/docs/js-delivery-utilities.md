@@ -21,7 +21,7 @@ A polyfill method to detect DOM Content Loaded, inspired by https:. Often used i
 
 ### Syntax
 
-``
+`Mojito.utils.domReady(callback);`
 
 | Parameter                                          |                                                    |
 | -------------------------------------------------- | -------------------------------------------------- |
@@ -36,26 +36,29 @@ A polyfill method to detect DOM Content Loaded, inspired by https:. Often used i
 Imagine you place the Mojito library inside the page header, but you need to Manipulate the DOM further down the page, you can delay experiment activation until DOM Content Loaded has fired.
 
 ```js
-
-
-
+function(test){
+    // If users are from Google, wait until Mojito.domReady() fires before activation
+    if (document.referrer.indexOf('google.com') > -1) Mojito.utils.domReady(function(){
+        test.activate();
+    })
+}
 ```
 
 ## Mojito.utils.waitForElement()
 
 ### Description
 
-A function that executes a callback once the first selected DOM element is detected on the page. Under the hood, it's a simple wrapper of ``. Commonly used to wait for a specific element to exist before manipulating it or activating an experiment.
+A function that executes a callback once the first selected DOM element is detected on the page. Under the hood, it's a simple wrapper of `Mojito.utils.observeSelector()`. Commonly used to wait for a specific element to exist before manipulating it or activating an experiment.
 
 ### Syntax
 
-``
+`Mojito.utils.waitForElement(selector, callback, timeout);`
 
 | Parameter                                                  |                                                                                                                                                                                                       |
 | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **selector**  Type: _CSS selector_  _Required_     | A CSS selector specifying the DOM element to wait for.                                                                                                                                                |
 | **callback**  Type: _function_  _Required_         | A function that's executed once first matched element exists.                                                                                                                                         |
-| **timeout**  Type: _integer_ or _null_  _Optional_ | Time in milliseconds which the function will wait for the selected element to exist. Defaults to `` (2000ms by default). Set to `` for no timeout. |
+| **timeout**  Type: _integer_ or _null_  _Optional_ | Time in milliseconds which the function will wait for the selected element to exist. Defaults to `Mojito.options.defaultWaitTimeout` (2000ms by default). Set to `null` for no timeout. |
 
 | Return value |   |
 | ------------ | - |
@@ -66,9 +69,10 @@ A function that executes a callback once the first selected DOM element is detec
 Let's say you are transforming many elements on a page and one of the elements is injected by another script some time after DOM Content Loaded. We can delay activation until the moment the element gets injected.
 
 ```js
-
-
-
+function(test){
+    // Wait up to 4 seconds for an element to exist before activating experiment
+    Mojito.utils.waitForElement('.someDelayedElement', test.activate, 4000);
+}
 ```
 
 ## Mojito.utils.waitUntil()
@@ -79,13 +83,13 @@ A utility that executes a callback once a polled condition function returns true
 
 ### Syntax
 
-``
+`Mojito.utils.waitUntil(conditionFunction, callback, timeout);`
 
 | Parameter                                                   |                                                                                                                                                                                                                                                     |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **conditionFunction**  Type: _function_  _Required_ | A function that returns a boolean. `` if a condition is matched and `` if a condition not yet matched.                                                                                                                       |
-| **callback**  Type: _function_  _Required_          | A function that's executed once **conditionFunction** returns ``                                                                                                                                                                         |
-| **timeout**  Type: _integer_   _Optional_           | Total time in milliseconds which the function will poll the **conditionFunction**. Defaults to `` (2000ms by default). Polling interval defaults to `` (50ms by default). |
+| **conditionFunction**  Type: _function_  _Required_ | A function that returns a boolean. `true` if a condition is matched and `false` if a condition not yet matched.                                                                                                                       |
+| **callback**  Type: _function_  _Required_          | A function that's executed once **conditionFunction** returns `true`                                                                                                                                                                         |
+| **timeout**  Type: _integer_   _Optional_           | Total time in milliseconds which the function will poll the **conditionFunction**. Defaults to `Mojito.options.defaultWaitTimeout` (2000ms by default). Polling interval defaults to `Mojito.options.waitInterval` (50ms by default). |
 
 | Return value |   |
 | ------------ | - |
@@ -96,9 +100,17 @@ A utility that executes a callback once a polled condition function returns true
 Imagine that your experiment leverages a JS framework, e.g. jQuery, but Mojito is loaded before the framework. Premature activation will likely result in JS errors on the jQuery calls. We can delay the experiment from activating until jQuery has been included on the page.
 
 ```js
-
-
-
+function(test){
+    // Wait until jQuery exists on the page before activating
+    Mojito.utils.waitUntil(function() {
+        if(window.jQuery) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }, test.activate);
+}
 ```
 
 ## Mojito.utils.observeSelector()
@@ -109,13 +121,13 @@ A wrapper of [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API
 
 ### Syntax
 
-``
+`Mojito.utils.observeSelector(selector, callback, options);`
 
 | Parameter                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **selector**  Type: _CSS Selector_  _Required_ | A CSS selector specifying the DOM element to observe.                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **callback**  Type: _function_  _Required_     | A function that's executed once the matched element is added to the page. The first argument of the function is the matched element.                                                                                                                                                                                                                                                                                                                                   |
-| **options**  Type: _object_   _Optional_       | Three options can be specified:  `` - Type: _integer or null_ - Time in milliseconds to observe. Defaults to `` (no timeout).  `` - Type: _boolean_ - If ``, callback is invoked only on the first match, if `` (default), callback is invoked on every match.  `` - Type: _function_ - Callback function if timeout is specified and no elements matched within given timeout. |
+| **options**  Type: _object_   _Optional_       | Three options can be specified:  `timeout` - Type: _integer or null_ - Time in milliseconds to observe. Defaults to `null` (no timeout).  `once` - Type: _boolean_ - If `true`, callback is invoked only on the first match, if `false` (default), callback is invoked on every match.  `onTimeout` - Type: _function_ - Callback function if timeout is specified and no elements matched within given timeout. |
 
 | Return value |   |
 | ------------ | - |
@@ -126,9 +138,13 @@ A wrapper of [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API
 Imagine you have a list of cross sell products on an ecommerce product page. You want to experiment with the styling of some of the products but its DOM elements are intermittently destroyed and created by some third party script. MutationObservers are an ideal way to deal with this scenario.
 
 ```js
-
-
-
+function treatment() {
+    function styleProduct(element) {
+        // do some styling to certain products
+    }
+    // observe cross sell item nodes and style
+    Mojtio.utils.observeSelector('#crossSellList .crossSellItem', styleProduct);
+}
 ```
 
 ## Mojito.utils.watchElement()
@@ -139,13 +155,13 @@ A wrapper of [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API
 
 ### Syntax
 
-``
+`Mojito.utils.watchElement(selectorOrElement, callback, options);`
 
 | Parameter                                                                      |                                                                                                                                                                                                                                                                                                    |
 | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **selectorOrElement**  Type: _CSS Selector or DOM element_  _Required_ | A CSS selector or DOM element specifying the element to watch.                                                                                                                                                                                                                                     |
-| **callback**  Type: _function_  _Required_                             | A function that's executed once the matched element changes. The first argument of the function is an array of [``s](https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord).                                                                                        |
-| **options**  Type: _object_   _Optional_                               | An optional [``](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserverInit) object providing options that describe what DOM mutations should be reported. Defaults:  `` |
+| **callback**  Type: _function_  _Required_                             | A function that's executed once the matched element changes. The first argument of the function is an array of [`MutationRecord`s](https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord).                                                                                        |
+| **options**  Type: _object_   _Optional_                               | An optional [`MutationObserverInit`](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserverInit) object providing options that describe what DOM mutations should be reported. Defaults:  `{ childList: true, subtree: true, characterData: true, attributes: true }` |
 
 | Return value |   |
 | ------------ | - |
@@ -156,9 +172,24 @@ A wrapper of [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API
 A DOM element houses intrinsic data via an attribute. You want to experiment with manipulating the element based on the attribute value but it's subject to dynamic updates from a third party script. Variant code will need to be able to handle when these values change.
 
 ```js
+function treatment() {
+    var priceElement = document.getElementById('foo');
 
+    function transformElement(mutations) {
+        // do something to the element
+    }
 
-
+    Mojito.utils.watchElement(element, transformElement, 
+        {   
+            // only watch for specific attribute changes
+            childList: false,
+            subtree: false,
+            characterData: false,
+            attributes: true,
+            attributeFilter: ['data-unit-price-val']
+        }
+    );
+}
 ```
 
 ## All done?
