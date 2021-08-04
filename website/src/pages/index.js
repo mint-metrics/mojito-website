@@ -284,7 +284,7 @@ class Index extends React.Component {
             content:
               '<h2>Quick start</h2>\
               <p>You\'ll need <a href="https://nodejs.org/en/">Node</a>, <a href="https://www.npmjs.com/get-npm">npm</a> and <a href="https://gulpjs.com/">Gulp CLI</a> installed.</p>\
-              <pre style="max-width: 900px;margin-left: auto;margin-right: auto;"><code class="hljs css language-shell" style="text-align: left;">\
+              <pre style="max-width: 900px;margin-left: auto;margin-right: auto;"><code class="hljs css language-shell" style="text-align: left;white-space: nowrap;">\
               <span class="comment"># Download Mojito JS Delivery</span><br />\
               <span class="command">git clone <a href="https://github.com/mint-metrics/mojito-js-delivery.git">https://github.com/mint-metrics/mojito-js-delivery.git</a></span><br />\
               <span class="comment">cd mojito-js-delivery</span><br />\
