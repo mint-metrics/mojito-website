@@ -4,27 +4,30 @@
     "1. JS Delivery": [
       "js-delivery-intro",
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Experiment setup",
-        "ids": [
+        "items": [
           "js-delivery-setup",
           "js-delivery-setup-js",
           "js-delivery-setup-yaml",
           "js-delivery-setup-shared-parameters"
-        ]
-      },      "js-delivery-customisation",
+        ],
+        "collapsed": true
+      },
+      "js-delivery-customisation",
       "js-delivery-preview-launch",
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Hosting",
-        "ids": [
+        "items": [
           "js-delivery-hosting",
           "js-delivery-hosting-s3-cf",
           "js-delivery-hosting-build-script",
           "js-delivery-hosting-iam",
           "js-delivery-hosting-bitbucket",
           "js-delivery-hosting-snippet"
-        ]
+        ],
+        "collapsed": true
       },
       "js-delivery-upgrading"
     ],
