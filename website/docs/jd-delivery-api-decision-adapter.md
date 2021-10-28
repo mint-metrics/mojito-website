@@ -107,7 +107,7 @@ Mojito.options.decisionAdapter = function (test)
     var seed = test.options.seed;
     if (!seed)
     {
-        seed  = md5(userdId + test.options.id);
+        seed  = md5(userId + test.options.id);
         // Store the seed in the test object for later use
         test.options.seed = seed;
     }
