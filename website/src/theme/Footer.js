@@ -47,7 +47,7 @@ const Footer = () =>
             <a href="https://twitter.com/mintmetrics_io">Twitter</a>
           </div>
         </section>
-        <section className="copyright">Copyright © 2021 Mint Metrics Pty Ltd</section>
+        <section className="copyright">Copyright © 2022 Mint Metrics Pty Ltd</section>
       </footer>
   );
 };
