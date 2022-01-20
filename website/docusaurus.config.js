@@ -75,7 +75,8 @@ module.exports={
       ]
     },
     "algolia": {
-      "apiKey": "fb512391b69cbe072f0ed74c938f64bc",
+      "apiKey": "fe1bbf10e8e73875b3429a20a794dc7a",
+      "appId": "IZD7KMQX5O",
       "indexName": "mojito_mint_metrics",
       "algoliaOptions": {}
     },
