@@ -9,7 +9,7 @@ The focus of this release was a series of optimisations that allowed us to cut m
 
 Here's a comprehensive summary of the changes you'll find:
 
-truncate
+<!--truncate-->
 
 ### New features
 
