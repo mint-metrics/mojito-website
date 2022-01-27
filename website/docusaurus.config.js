@@ -28,10 +28,9 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "home",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
-          "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/docs/",
+          "editUrl": "https://github.com/mint-metrics/mojito-website/edit/master/website/",
           "path": "./docs",
           "sidebarPath": "./sidebars.json"
         },
@@ -53,7 +52,7 @@ module.exports={
       },
       "items": [
         {
-          "to": "docs/",
+          "to": "docs/home",
           "label": "Get started",
           "position": "left"
         },
