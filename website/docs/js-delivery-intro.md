@@ -13,7 +13,7 @@ The `Mojito JS Delivery` component is a lightweight (&lt;5.5kb) JS framework for
 
 ## Getting setup
 
-1.  Fork this repository on GitHub
+1.  Fork [the Mojito JS Delivery repository](https://github.com/mint-metrics/mojito-js-delivery) on GitHub
 2.  Clone your forked repository (not this original one) to your local environment
 3.  Install the necessary NPM packages: `npm install`
 
