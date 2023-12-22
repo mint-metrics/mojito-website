@@ -6,9 +6,20 @@ sidebar_label: 5. Snippet installation
 We typically install Mojito JS synchronously in the head of all pages with a script tag:
 
 ```html
+<script type="text/javascript">
+(function() {
+    if (!window.Mojito || !Mojito.testObjects || !Object.keys(Mojito.testObjects).length) {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = false;
 
-<script type="text/javascript" src="//{{cloudfront-cname}}.cloudfront.net/{{environment}}/{{container-name}}.js"></script>
-
+        var stags = document.getElementsByTagName('script');
+        var s = stags[stags.length - 1];
+        s.parentNode.insertBefore(po, s);
+        po.src = '//{{cloudfront-cname}}.cloudfront.net/{{environment}}/{{container-name}}.js';
+    }
+})();
+</script>
 ```
 
 Just replace the placeholder text in the snippet abover with your own values:
@@ -22,9 +33,20 @@ Just replace the placeholder text in the snippet abover with your own values:
 Theoretically, Mojito can be [installed asynchronously via the async attribute](https://www.w3schools.com/tags/att_script_async.asp). But this is untested and you may encounter race conditions between your JS executing and the available elements on the page:
 
 ```html
+<script type="text/javascript">
+(function() {
+    if (!window.Mojito || !Mojito.testObjects || !Object.keys(Mojito.testObjects).length) {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
 
-<script async type="text/javascript" src="//{{cloudfront-cname}}.cloudfront.net/{{environment}}/{{container-name}}.js"></script>
-
+        var stags = document.getElementsByTagName('script');
+        var s = stags[stags.length - 1];
+        s.parentNode.insertBefore(po, s);
+        po.src = '//{{cloudfront-cname}}.cloudfront.net/{{environment}}/{{container-name}}.js';
+    }
+})();
+</script>
 ```
 
 If you try this, let us know how it works. Good luck!
