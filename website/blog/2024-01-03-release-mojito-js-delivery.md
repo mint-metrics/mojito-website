@@ -6,7 +6,7 @@ authorFBID: 609714465
 authorTwitter: robkingston
 ---
 
-Today we release Mojito JS Delivery v2.5.0, the latest version of our versatile JavaScript split testing library. This release focuses on improving your workflow by significantly reducing dependencies, build times through the new npm Scripts and offering better visibility over your container contents with new container statistics.
+Today we release Mojito JS Delivery v2.5.0, the latest version of our versatile JavaScript split testing library. This release focuses on improving your workflow by significantly reducing dependencies and build times through the new npm Scripts. We also introduce new container visibility enhancements to help you keep your container weight under check.
 
 ## Bye to Gulp, Hello to npm Scripts
 We've replaced our aging Gulp build scripts with npm Scripts, waving goodbye to the older, aging Gulp ecosystem. This shift to npm scripts reduces dependencies by over 60% and significantly improves build times. Specifically, our Bitbucket Pipelines build times have improved by over 30%.
