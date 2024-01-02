@@ -9,7 +9,7 @@ The `Mojito JS Delivery` component is a lightweight (&lt;5.5kb) JS framework for
 
 ## Prerequisites
 
--   Make sure you have [Node](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/) and [Gulp CLI](https://gulpjs.com/) installed
+-   Make sure you have [Node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/)
 
 ## Getting setup
 
@@ -21,10 +21,15 @@ The `Mojito JS Delivery` component is a lightweight (&lt;5.5kb) JS framework for
 
 Get up and running with Mojito experiments in 4 steps:
 
-1.  [Experiment setup](#step-1-experiment-setup)
-2.  [Customisation and tracking](#step-2-customisation-and-tracking)
-3.  [Build container, preview and launch](#step-3-build-container-preview-and-launch)
-4.  [Hosting and publishing](#step-4-hosting-and-publishing)
+- [Prerequisites](#prerequisites)
+- [Getting setup](#getting-setup)
+- [Creating and launching experiments](#creating-and-launching-experiments)
+  - [Step 1. Experiment setup](#step-1-experiment-setup)
+  - [Step 2. Customisation and tracking](#step-2-customisation-and-tracking)
+  - [Step 3. Build container, preview and launch](#step-3-build-container-preview-and-launch)
+  - [Step 4. Hosting and publishing](#step-4-hosting-and-publishing)
+- [Experiment data and analysis](#experiment-data-and-analysis)
+- [Get involved](#get-involved)
 
 ### Step 1. Experiment setup
 
@@ -40,7 +45,7 @@ Set up custom tracking, error handling & user exclusion rules for your entire co
 
 ### Step 3. Build container, preview and launch
 
-Use Gulp to build the Mojito container and see how to preview and launch experiments.
+Use the npm Scripts to build the Mojito container and see how to preview and launch experiments.
 
 [Read about the build, preview and launch process.](js-delivery-preview-launch.md)
 

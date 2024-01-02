@@ -57,7 +57,7 @@ Get up and running quickly with the README files inside each section.
 
 Using Mojito's CI tools, you can set up experiments in YAML & JS:
 
-```{"{"}yaml{"}"}
+```yaml
 
 id: ex1
 name: Example test 1
@@ -76,7 +76,7 @@ recipes:
 
 Where `trigger.js` activates the experiment when a condition is met and a callback to activate is fired:
 
-```{"{"}js{"}"}
+```js
 
 function trigger(test) {
     if (document.location.pathname === '/') test.activate();
@@ -90,16 +90,16 @@ For users assigned to the "Variant" group, we execute **a)** `variant.js` and **
 
 ### After you've defined an experiment YAML...
 
-Run the Gulp pipeline to lint/test/publish your container.
+Run the `deploy` command to build & publish your container.
 
-1.  Install the necessary NPM packages: `npm install`
-2.  Build & publish your testing container: `gulp build && gulp publish`
+1.  Install the necessary NPM packages: `npm ci`
+2.  Build & publish your testing container: `npm run deploy`
 
 ## Example analytics reports
 
 If you use our Snowplow/Redshift & R Analytics component for reporting, all your metrics can be reported on with a simple array of metrics.
 
-```{"{"}r{"}"}
+```R
 
 wave_params <- list(
   client_id = "mintmetrics",

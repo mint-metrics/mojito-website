@@ -10,7 +10,7 @@ Let's imagine we're working for Bing and we want to test showing no image on the
 <!-- https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgQShUcmFmZmljKSAtLT58MTAwJXwgQntFeHBlcmltZW50fVxuICBCIC0tPnw1MCV8IERbQ29udHJvbF1cbiAgQiAtLT58NTAlfCBFW1RyZWF0bWVudF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ  -->
 
 > **Pre-requisites** 
-> 1) You've [cloned Mojito JS Delivery locally](https://github.com/mint-metrics/mojito-js-delivery), with npm, Node and Gulp installed. 
+> 1) You've [cloned Mojito JS Delivery locally](https://github.com/mint-metrics/mojito-js-delivery) and installed the package dependencies. 
 > 2) You've setup [tracking through your storageAdapter, or used our example one](/docs/js-delivery-api-storage-adapter#example-storage-adapter--test-object-override).
 
 ## Experiment parameters
@@ -40,7 +40,7 @@ Start by creating your test's scaffolding. You can do this on the command line, 
 
 ```sh
 
-gulp new --ab ex1
+npm run new -- --ab ex1
 
 ```
 
@@ -139,11 +139,7 @@ Congratulations! Your experiment is now set up. It's ready to build and publish 
 
 ```sh
 
-# Build your container file
-gulp build
-
-# (If you'e set up S3 publishing) Publish the container to AWS S3
-gulp publish
+npm run deploy
 
 ```
 
@@ -184,6 +180,6 @@ Now you can build and publish your experiment again, to send it live for all you
 ```sh
 
 # Build your container file & publish to AWS S3 (if configured)
-gulp build && gulp publish
+npm run deploy
 
 ```

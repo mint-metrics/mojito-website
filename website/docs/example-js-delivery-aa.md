@@ -29,7 +29,7 @@ Mojito lets you create AA test through the CLI, through its dedicated `--aa` fla
 
 ```sh
 
-gulp new --aa aa1
+npm run new -- --aa aa1
 
 ```
 
@@ -73,13 +73,13 @@ You've created an AA test, now let's send it live and publish it to your site:
 ```sh
 
 # Set the test live
-gulp set --live aa1
+npm run set -- live --waveId aa1
 
 # Build your container file
-gulp build
+npm run build
 
 # (If you'e set up S3 publishing) Publish the container to AWS S3
-gulp publish
+npm run publish
 
 ```
 

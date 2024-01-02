@@ -9,7 +9,7 @@ Whenever you make changes to experiments in Mojito, you need to build/publish yo
 
 1.  (Optional) Customise your Mojito container name in [`repo/config.js`](https://github.com/mint-metrics/mojito-js-delivery/blob/master/config.example.js)
 2.  If you haven't done so already, install the necessary NPM packages: `npm install`
-3.  Build your Mojito container: `gulp build`
+3.  Build your Mojito container: `npm run build`
 
 ## Previewing experiments
 
@@ -76,9 +76,9 @@ To launch an experiment, set its `state` parameter to `live` and check that `sam
 ```sh
 
 # Launch "ex1" to 10% of traffic, build and publish to production
-gulp set --live ex1 --traffic 0.1
-gulp build
-gulp publish --production
+npm run set -- live --waveId ex1 --traffic 0.1
+npm run build
+npm run publish --production
 
 ```
 
@@ -89,9 +89,9 @@ To takedown an experiment, set its `state` parameter to `staging` (to keep the t
 ```sh
 
 # Takedown "ex1", build and publish with the updated logic
-gulp set --inactive ex1
-gulp build
-gulp publish --production
+npm run set -- inactive --waveId ex1
+npm run build
+npm run publish --production
 
 ```
 

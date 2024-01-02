@@ -3,7 +3,7 @@ id: js-delivery-setup
 title: Setting up experiments with Mojito JS Delivery
 sidebar_label: Two supported methods
 ---
-There are two approaches to setup experiments in Mojito. The **gulp** builder supports both methods when building the JS container.
+There are two approaches to setup experiments in Mojito. The npm build script supports both methods when building the JS container.
 
 1.  **[Straight JS](js-delivery-setup-js.md)**: define experiment parameters, trigger code and variant code in a single JS file: `test-object.js`
 
