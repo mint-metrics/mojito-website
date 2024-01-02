@@ -1,6 +1,6 @@
 ---
 id: js-delivery-npm-scripts-commands
-title: CLI reference for Mojito JS Delivery npm Scripts
+title: npm Scripts CLI reference for Mojito JS Delivery
 sidebar_label: "npm Scripts commands (>=2.5.0)"
 ---
 
