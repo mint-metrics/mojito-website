@@ -92,7 +92,7 @@ For users assigned to the "Variant" group, we execute **a)** `variant.js` and **
 
 Run the `deploy` command to build & publish your container.
 
-1.  Install the necessary NPM packages: `npm ci`
+1.  Install the necessary NPM packages: `npm install`
 2.  Build & publish your testing container: `npm run deploy`
 
 ## Example analytics reports

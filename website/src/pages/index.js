@@ -288,7 +288,7 @@ class Index extends React.Component {
               <span class="comment"># Download Mojito JS Delivery</span><br />\
               <span class="command">git clone <a href="https://github.com/mint-metrics/mojito-js-delivery.git">https://github.com/mint-metrics/mojito-js-delivery.git</a></span><br />\
               <span class="comment">cd mojito-js-delivery</span><br />\
-              <span class="comment">npm ci</span><br />\
+              <span class="comment">npm install</span><br />\
               <br />\
               <span class="comment"># Create your first test</span><br />\
               <span class="comment">npm run new -- --demo w1</span><br />\
