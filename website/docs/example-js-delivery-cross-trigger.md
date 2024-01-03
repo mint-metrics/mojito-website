@@ -62,7 +62,7 @@ Using the command line, let's scaffold everything we need for the two experiment
 
 ```sh
 
-gulp new --ab ex1 && gulp new --ab ex2
+npm run new -- --ab ex1 && npm run new -- --ab ex2
 
 ```
 
@@ -189,7 +189,7 @@ By now, your experiments are ready to build and preview. Give it a:
 
 ```sh
 
-gulp build && gulp publish
+npm run deploy
 
 ```
 

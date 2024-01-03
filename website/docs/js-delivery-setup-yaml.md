@@ -7,7 +7,7 @@ To setup our example experiment, start by defining it on the command line:
 
 ```sh
 
-gulp new -ab ex2
+npm run new -- --ab ex2
 
 ```
 
@@ -67,7 +67,7 @@ ex2/
 
 ```
 
-With these files defined, the gulp builder will construct an experiment object resembling what we saw in the straight JS setup and stitch it into the container along with `mojito.js`.
+With these files defined, the build script will construct an experiment object resembling what we saw in the straight JS setup and stitch it into the container along with `mojito.js`.
 
 ## Next steps
 

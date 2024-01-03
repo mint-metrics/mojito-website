@@ -54,7 +54,7 @@ module.exports = {
 
 ```
 
-Read more [about the Gulp file's config script](js-delivery-hosting-build-script.md).
+Read more [about the npm scripts](js-delivery-hosting-build-script.md).
 
 ## Create a Cloudfront distribution from your S3 bucket
 
@@ -79,7 +79,7 @@ Now we'll setup a CDN to serve your container lightning-quick from anywhere in t
 -   `Use Origin Cache Headers` is enabled
 -   `Compress objects automatically` is set to diabled
 
-We make these options configurable inside the gulp publishing script, instead.
+We make these options configurable inside the npm publish script, instead.
 
 ![Step 4](/img/js-delivery/aws/cf_4.png)
 

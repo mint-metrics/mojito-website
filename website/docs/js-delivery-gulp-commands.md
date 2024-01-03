@@ -1,7 +1,7 @@
 ---
 id: js-delivery-gulp-commands
 title: Gulp CLI reference for Mojito JS Delivery
-sidebar_label: "Gulp commands / CLI"
+sidebar_label: "Gulp commands (<=2.4.1)"
 ---
 You can build your container, perform unit tests, manage experiments and even publish your container to your S3 buckets all from your terminal. 
 

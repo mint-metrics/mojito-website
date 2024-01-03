@@ -61,7 +61,7 @@ Now you can publish straight from your IDE:
 
 ```bash
 
-gulp build && gulp publish
+npm run deploy
 
 ```
 
@@ -69,7 +69,7 @@ And if your user has access to production, they can push to your configured prod
 
 ```bash
 
-gulp build && gulp publish --production
+npm run build && npm run publish --production
 
 ```
 

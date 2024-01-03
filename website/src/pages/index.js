@@ -283,7 +283,7 @@ class Index extends React.Component {
           {
             content:
               '<h2>Quick start</h2>\
-              <p>You\'ll need <a href="https://nodejs.org/en/">Node</a>, <a href="https://www.npmjs.com/get-npm">npm</a> and <a href="https://gulpjs.com/">Gulp CLI</a> installed.</p>\
+              <p>You\'ll need <a href="https://nodejs.org/en/">Node</a> and <a href="https://www.npmjs.com/get-npm">npm</a> installed.</p>\
               <pre style="max-width: 900px;margin-left: auto;margin-right: auto;"><code class="hljs css language-shell" style="text-align: left;white-space: nowrap;">\
               <span class="comment"># Download Mojito JS Delivery</span><br />\
               <span class="command">git clone <a href="https://github.com/mint-metrics/mojito-js-delivery.git">https://github.com/mint-metrics/mojito-js-delivery.git</a></span><br />\
@@ -291,11 +291,11 @@ class Index extends React.Component {
               <span class="comment">npm install</span><br />\
               <br />\
               <span class="comment"># Create your first test</span><br />\
-              <span class="comment">gulp new --demo w1</span><br />\
-              <span class="comment">gulp set --live w1</span><br />\
+              <span class="comment">npm run new -- --demo w1</span><br />\
+              <span class="comment">npm run set -- live --waveId w1</span><br />\
               <br />\
               <span class="comment"># Build your container into dist/mojito.js</span><br />\
-              <span class="comment">gulp build</span>\
+              <span class="comment">npm run build</span>\
               </code>\
               </pre>',
           },

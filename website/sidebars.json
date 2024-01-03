@@ -60,7 +60,8 @@
       "js-delivery-api-storage-adapter",
       "js-delivery-api-decision-adapter",
       "js-delivery-utilities",
-      "js-delivery-gulp-commands"
+      "js-delivery-gulp-commands",
+      "js-delivery-npm-scripts-commands"
     ],
     "2. Snowplow Storage": [
       "snowplow-storage-events",
