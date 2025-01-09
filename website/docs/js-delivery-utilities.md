@@ -12,6 +12,7 @@ We've baked a series of utility functions into Mojito which we think are handy f
 -   [`Mojito.utils.waitUntil()`](#mojitoutilswaituntil) - wait until a condition is satisfied before performing an action.
 -   [`Mojito.utils.observeSelector()`](#mojitoutilsobserveselector) - wait for elements to exist before performing an action.
 -   [`Mojito.utils.watchElement()`](#mojitoutilswatchelement) - watch for element mutations before performing an action.
+-   [`Mojito.utils.waitForIntersection()`](#mojitoutilswaitforintersection) - wait until an element is in the viewport.
 
 ## Mojito.utils.domReady()
 
@@ -191,6 +192,44 @@ function treatment() {
     );
 }
 ```
+
+## Mojito.utils.waitForIntersection (added in `2.7.0`)
+
+### Description
+
+This utility executes a callback, once by default, when the selected DOM element becomes visible in the useragent viewport. It implements a wrapper for the [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver).
+
+### Syntax
+
+| Parameter |  |
+| - | - |
+| **element**  Type: _DOM element_  _Required_ | A function that returns a boolean. `true` if a condition is matched and `false` if a condition not yet matched.                                                                                                                       |
+| **callback**  Type: _function_  _Required_          | A function that's executed once the **element** triggers the IntersectionObserver callback. `true`                                                                                                                                                                         |
+| **options**  Type: _object_   _Optional_           | An optional object providing options for the IntersectionObserver API ([view reference on MDN](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)). e.g. `threshold`, `rootMargin` and `once`. Default: `{ once: true }`. |
+
+| Return value |   |
+| ------------ | - |
+| N/A          |   |
+
+
+### Example
+
+Imagine you're running an experiment far down the page. Only a small fraction of traffic to the page will see the experiment - To reduce the variance, you only want to activate your experiment when it's likely the user will see the change. You can use this utility function to do just that.
+
+```js
+// Activate an experiment when the footer moves into the viewport
+function(test){
+    Mojito.utils.domReady(function () {
+        var footer = document.querySelector('footer');
+        if (!footer) {
+            return;
+        }
+        Mojito.utils.waitForIntersection(footer, test.activate);
+    });
+}
+```
+
+
 
 ## All done?
 
