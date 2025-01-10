@@ -12,7 +12,7 @@ We've baked a series of utility functions into Mojito which we think are handy f
 -   [`Mojito.utils.waitUntil()`](#mojitoutilswaituntil) - wait until a condition is satisfied before performing an action.
 -   [`Mojito.utils.observeSelector()`](#mojitoutilsobserveselector) - wait for elements to exist before performing an action.
 -   [`Mojito.utils.watchElement()`](#mojitoutilswatchelement) - watch for element mutations before performing an action.
--   [`Mojito.utils.waitForIntersection()`](#mojitoutilswaitforintersection) - wait until an element is in the viewport.
+-   [`Mojito.utils.waitForIntersection()`](#mojitoutilswaitforintersection-added-in-270) - wait until an element is in the viewport.
 
 ## Mojito.utils.domReady()
 
