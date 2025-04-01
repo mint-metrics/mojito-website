@@ -66,8 +66,6 @@
     "2. Snowplow Storage": [
       "snowplow-storage-events",
       "snowplow-storage-data-models"
-    ],
-    "3. R Analytics": [
     ]
   }
 }
