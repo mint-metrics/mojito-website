@@ -3,6 +3,8 @@
     "examples": "docusaurus-examples",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
@@ -11,16 +13,21 @@
     "deploy": "docusaurus deploy",
     "docusaurus": "docusaurus"
   },
-  "resolutions": {
-    "cheerio": "1.0.0-rc.12"
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/types": "^3.7.0"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.15",
-    "@docusaurus/preset-classic": "2.0.0-beta.15",
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "@mdx-js/react": "^3.0.0",
+    "prism-react-renderer": "^2.1.0",
     "clsx": "^1.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-markdown": "^8.0.0"
-  }
+  },
+  "engines": {
+    "node": ">=18.0"
+   }
 }
